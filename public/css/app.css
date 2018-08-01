@@ -10471,7 +10471,57 @@ a.text-dark:focus {
   }
 }
 
-.test {
-  color: red;
+.welcome .header-nav {
+  color: #616161;
+  padding-bottom: 0px !important;
+  font-size: 13px;
+}
+
+.welcome .header-nav .logo {
+  height: 40px;
+}
+
+.welcome .header-nav .langue img {
+  height: 15px;
+}
+
+.welcome .header-nav .header-text span {
+  font-weight: 500;
+  color: #ffc100;
+}
+
+.welcome .header-nav .header-btn .btn {
+  font-size: 12px;
+  margin: 0 8px;
+}
+
+.welcome .header-nav .link-auth {
+  line-height: 70px;
+}
+
+.welcome .header-nav .link-auth a {
+  color: #616161;
+  text-decoration: none;
+}
+
+.welcome .header-nav .link-auth a:hover {
+  color: #ffc100;
+}
+
+.welcome .header-slide {
+  height: 500px;
+  background-position-y: -170px;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome .header-slide:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 

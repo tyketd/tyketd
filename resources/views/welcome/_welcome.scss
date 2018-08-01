@@ -1,3 +1,49 @@
-.test{
-  color:red;
+.welcome{
+  .header-nav{
+    color: #616161;
+    padding-bottom: 0px!important;
+    font-size: 13px;
+    .logo{
+      height: 40px;
+    }
+    .langue{
+      img{
+        height: 15px;
+      }
+    }
+    .header-text{
+      span{
+        font-weight: 500;
+        color: #ffc100;
+      }
+    }
+    .header-btn{
+      .btn{
+        font-size: 12px;
+        margin: 0 8px;
+      }
+    }
+    .link-auth{
+      line-height: 70px;
+      a{
+        color: #616161;
+        text-decoration: none;
+        &:hover{
+          color: #ffc100;;
+        }
+      }
+    }
+  }
+  .header-slide{
+    height: 500px;
+    background-position-y: -170px;
+    background-size: cover;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0; left: 0; bottom: 0px; right: 0;
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
 }

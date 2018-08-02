@@ -40,10 +40,13 @@
             text-align: left;
         }
         .card.leftmenu .card-body .list-group-item:hover{
-            background-color: red;
+            background-color: #f44336;
         }
         .card.leftmenu .card-body .list-group-item.active:hover{
-            background-color: blue;
+            background-color: #0277db;
+        }
+        .card.leftmenu .card-body .list-group-item.active{
+            background-color: #0277db;
         }
         .nav-tabs .nav-link.active{
             padding-top: 10px;
@@ -56,6 +59,21 @@
         }
         .col-md-2 .leftmenu{
             margin-right: -20px;
+        }
+        .red {
+            background-color: #f44336;
+        }
+        .blue {
+            background-color: #0277db;
+        }
+        .green {
+            background-color: #4caf50;
+        }
+        .grayblue {
+            background-color: #263238;
+        }
+        .cleangray {
+            background-color: #e0e0e0;
         }
 
     </style>

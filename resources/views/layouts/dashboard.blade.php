@@ -48,6 +48,9 @@
         .nav-tabs .nav-link.active{
             padding-top: 10px;
         }
+        li a:hover{
+            text-decoration: none;
+        }
         .nav.nav-tabs{
             margin-bottom: 30px;
         }

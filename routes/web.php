@@ -11,20 +11,4 @@
 |
 */
 
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('register', [
-    'as' => 'register_path',
-    'uses' => 'AdministratorController@getRegisterForm'
-]);
-Route::get('login', [
-    'as' => 'login_path',
-    'uses' => 'AdministratorController@getLoginForm'
-]);
-Route::get('privacy', [
-    'as' => 'privacy_path',
-    'uses' => 'AdministratorController@getLoginForm'
-]);
+Route::get('/','Welcome\WelcomeController@index');

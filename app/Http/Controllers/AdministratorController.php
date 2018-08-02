@@ -82,29 +82,4 @@ class AdministratorController extends Controller
     {
         //
     }
-
-    /**
-     * cette fonction permet d'afficher le formulaire de creation de compte.
-     *la route etant definit dans le web.php : Route::get('register', [
-                                                                'as' => 'register_path',
-                                                                'uses' => 'AdministratorController@getRegisterForm'
-                                                                ]);
-
-     */
-    public function getRegisterForm()
-    {
-        return view('registerAndLogin.register');
-    }
-
-    /**
-     * cette fonction permet d'afficher le formulaire de connexion.
-     *la route etant definit dans le web.php : Route::get('login', [
-                                                                'as' => 'register_path',
-                                                                'uses' => 'AdministratorController@getLoginForm'
-                                                                ]);
-     */
-    public function getLoginForm()
-    {
-        return view('registerAndLogin.login');
-    }
 }

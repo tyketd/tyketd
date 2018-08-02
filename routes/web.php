@@ -12,3 +12,16 @@
 */
 
 Route::get('/','Welcome\WelcomeController@index');
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', 'Dashboard\DashboardController@index')->name('dashboard');
+Route::get('/dashboard/account', 'Dashboard\DashboardController@account')->name('dashboard.account');
+Route::get('/dashboard/account/general', 'Dashboard\DashboardController@account');
+Route::post('/dashboard/account/general', 'Dashboard\DashboardController@update')->name('dashboard.updateAccount');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -4,14 +4,14 @@
    <div class=" welcome">
        <div class=" container">
            <div class="row header-nav p-2">
-               <div class="col-sm flex-column">
+               <div class="col-sm d-flex flex-lg-column flex-row">
                    <img class="d-flex  logo" src="{{asset('img/logo.png')}}" alt="">
-                   <span  class="slogan d-flex">Transport de colis entre particulier</span>
+                   <span  class="slogan d-flex hide-tablete hide-mobile">Transport de colis entre particulier</span>
                </div>
                <div class="col-sm">
                    <div class="flex-column">
                        <div class="d-flex header-text justify-content-end "><span >Rentablissez votre voyage !  <i class="glyphicon glyphicon-pencil"> </i> </span></div>
-                       <div class="d-flex flex-row p-2 header-btn">
+                       <div class="d-flex flex-column flex-md-row p-2 header-btn">
                            <div class="d-flex langue p-2">
                                <img src="{{asset('img/flagfr.png')}}" alt="">
                            </div>
@@ -35,14 +35,14 @@
                    </div>
                    <div class="d-flex header-slide-content-filter justify-content-center">
                        <div class="fliter-form">
-                           <form action="" class="d-flex flex-row">
-                               <div class="d-flex p-2">LIVRAISON DE </div>
-                               <img src="{{asset('img/m1.png')}}" class="d-flex " alt="img">
-                               <div class="d-flex p-2"><input type="text" class="form-control " placeholder="Pays ou ville"></div>
-                               <div class="d-flex p-2">A </div>
-                               <img src="{{asset('img/m2.png')}}" class="d-flex " alt="img">
-                               <div class="d-flex p-2"><input type="text" class="form-control " placeholder="Pays ou ville"></div>
-                               <div class="d-flex p-2"><button type="button" class="btn btn-outline-primary">Trouver un voyageur</button></div>
+                           <form action="" class="d-flex flex-column flex-md-row">
+                               <div class="d-flex p-1 p-md-1">LIVRAISON DE </div>
+                               <img src="{{asset('img/m1.png')}}" class="d-flex hide-mobile hidden-md" alt="img">
+                               <div class="d-flex p-1 p-md-1"><input type="text" class="form-control " placeholder="Pays ou ville"></div>
+                               <div class="d-flex p-1 p-md-1">A </div>
+                               <img src="{{asset('img/m2.png')}}" class="d-flex hide-mobile hidden-md" alt="img">
+                               <div class="d-flex p-1 p-md-1"><input type="text" class="form-control " placeholder="Pays ou ville"></div>
+                               <div class="d-flex p-1 p-md-1"><button type="button" class="btn btn-outline-primary">Trouver un voyageur</button></div>
                            </form>
                        </div>
                    </div>
@@ -52,10 +52,10 @@
         <div class=" wel-body pb-5">
             <div class="container">
                 <div class="row wel-body-part1 pt-5">
-                    <div class="col-sm">
+                    <div class="col-md-12 col-lg hide-mobile">
                         <img src="{{asset('img/tr1.png')}}" alt="">
                     </div>
-                    <div class="col-sm d-flex flex-column wel-body-part1-desc">
+                    <div class="col-md-12 col-lg d-flex flex-column wel-body-part1-desc">
                     <span class="d-flex p-2 desc">
                         Vous prenez le volant ? <br>
                         Dites nous ou vous allez !
@@ -67,29 +67,29 @@
                     </div>
                 </div>
                 <div class="row wel-body-part2 pt-5">
-                    <div class="col-4 flex-column">
+                    <div class="col-md-6 col-lg-4 col-sm-12 flex-column">
                         <img src="{{asset('img/pr21.png')}}" alt="" class="d-lex">
                         <span class="title d-flex p-2">Nouveau! Partager d'ou vous êtes</span>
-                    <span class="d-flex pl-2 pr-2 pt-2 pb-0   descrip">
+                    <span class="d-flex pl-2 pr-2 pt-2 pb-0 hide-mobile  descrip">
                         Votre trajet commence la ou il ya une route
                     </span>
-                        <a class="d-flex pl-2 pt-0" href="#">En savoir plus</a>
+                        <a class="d-flex pl-2 pb-2 pt-0" href="#">En savoir plus</a>
                     </div>
-                    <div class="col-4 flex-column">
+                    <div class="col-md-6 col-lg-4 col-sm-12 flex-column">
                         <img src="{{asset('img/pr22.png')}}" alt="" class="d-lex">
                         <span class="title d-flex p-2">Nouveau! Plus de passagers sur votre route</span>
-                    <span class="d-flex pl-2 pr-2 pt-2 pb-0   descrip">
+                    <span class="d-flex pl-2 pr-2 pt-2 pb-0 hide-mobile  descrip">
                         Desormais, votre trajet sera visible par la plus part des passagers
                     </span>
-                        <a class="d-flex pl-2 pt-0" href="#">En savoir plus</a>
+                        <a class="d-flex pl-2 pb-2 pt-0" href="#">En savoir plus</a>
                     </div>
-                    <div class="col-4 flex-column">
+                    <div class="col-md-6 col-lg-4 col-sm-12 flex-column">
                         <img src="{{asset('img/pr23.png')}}" alt="" class="d-lex">
                         <span class="title d-flex p-2">Nouveau! Bon plan exclusivement pour vous: passez a l'électricité verte et moins cher avec Total spring</span>
-                    <span class="d-flex pl-2 pr-2 pt-2 pb-0  descrip">
+                    <span class="d-flex pl-2 pr-2 pt-2 pb-0 hide-mobile  descrip">
                        Blablacar vous propose de benéficier d'une remise de 10% sur les prix HT
                     </span>
-                        <a class="d-flex pl-2 pt-0" href="#">En savoir plus</a>
+                        <a class="d-flex pl-2 pb-2 pt-0" href="#">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -98,19 +98,19 @@
        <footer class="pt-5 footer">
            <div class="container pb-2">
                <div class="row f-part1">
-                   <div class="col-md-3 col-sm-12 flex-column justify-content-center">
+                   <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">
                        <a href="#" class="d-flex p-2">Comment ça marche </a>
                        <a href="#" class="d-flex p-2">Contact</a>
                    </div>
-                   <div class="col-md-3 col-sm-12 flex-column justify-content-center">
+                   <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">
                        <a href="#" class="d-flex p-2">Qui sommes nous ? </a>
                        <a href="#" class="d-flex p-2">Conditions générales</a>
                    </div>
-                   <div class="col-md-3 col-sm-12 flex-column justify-content-center">
+                   <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">
                        <a href="#" class="d-flex p-2">Foire aux questions </a>
                        <a href="#" class="d-flex p-2">Nous recrutons</a>
                    </div>
-                   <div class="col-md-3 col-sm-12 flex-column justify-content-center">
+                   <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">
                        <div class="d-flex p-2 flang flex-column">
                            <span class="d-flex"> Langue </span>  <span class="d-flex description">Français (Belgique)</span>
                        </div>

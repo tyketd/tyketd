@@ -1,5 +1,5 @@
 .welcome{
-  background-color: #f5f8fa;
+  background-color: #ffffff;
   .header-nav{
     color: #616161;
     padding-bottom: 0px!important;
@@ -64,7 +64,7 @@
       .fliter-form{
         display: block;
         border-radius: 5px;
-        padding: 0 16px;
+        padding: 16px;
         z-index: 5;
         font-weight: 500;
         background-color: #fff;
@@ -84,6 +84,7 @@
     }
   }
   .wel-body{
+
     background-color: #fff;
     .wel-body-part1{
       padding: 21px 0px 11px 0px;
@@ -112,7 +113,7 @@
     .wel-body-part2{
       img{
         border-radius: 10px;
-        height: 360px;
+        height: 290px;
       }
       a{
         text-decoration: none;
@@ -131,7 +132,7 @@
   }
 
   .footer{
-
+background-color: #f5f8fa;
     .flang{
       padding: 12px 16px;
       background-color: #fff;
@@ -167,5 +168,57 @@
         color: #616161;
       }
     }
+  }
+}
+@media only screen and (max-width:640px) {
+  .col3 { width:100%; max-width:100%; }
+  .hide-mobile { display:none!important; }
+  .header-slide{
+    height: 500px;
+    padding-top: 20px!important;
+    background-position-y: 0px!important;
+    .welcome .header-slide .header-slide-content-title {
+
+      font-size: 14px!important;
+
+    }
+
+  }
+}
+
+@media only screen and (max-width:770px) and (min-width:641px) {
+  .header-slide{
+    height: 500px;
+    padding-top: 180px!important;
+    background-position-y: 0px!important;
+    .welcome .header-slide .header-slide-content-title {
+
+      font-size: 14px!important;
+
+    }
+
+    .header-slide-content-filter{
+      padding-top: 30px;
+      .fliter-form{
+
+        form{
+          line-height: 37px;
+          font-size: 10px!important;
+        }
+        img{
+          height: 14px;
+          margin-top: 18px;
+        }
+        input, .btn{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .hide-tablete{
+    display: none!important;
+  }
+  .welcome .header-nav .logo {
+    height: 75px!important;
   }
 }

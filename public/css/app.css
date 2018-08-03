@@ -10472,7 +10472,7 @@ a.text-dark:focus {
 }
 
 .welcome {
-  background-color: #f5f8fa;
+  background-color: #ffffff;
 }
 
 .welcome .header-nav {
@@ -10551,7 +10551,7 @@ a.text-dark:focus {
 .welcome .header-slide .header-slide-content-filter .fliter-form {
   display: block;
   border-radius: 5px;
-  padding: 0 16px;
+  padding: 16px;
   z-index: 5;
   font-weight: 500;
   background-color: #fff;
@@ -10608,7 +10608,7 @@ a.text-dark:focus {
 
 .welcome .wel-body .wel-body-part2 img {
   border-radius: 10px;
-  height: 360px;
+  height: 290px;
 }
 
 .welcome .wel-body .wel-body-part2 a {
@@ -10622,6 +10622,10 @@ a.text-dark:focus {
 
 .welcome .wel-body .wel-body-part2 .descrip {
   color: #616161;
+}
+
+.welcome .footer {
+  background-color: #f5f8fa;
 }
 
 .welcome .footer .flang {
@@ -10662,5 +10666,65 @@ a.text-dark:focus {
   font-size: 13px;
   font-weight: 600;
   color: #616161;
+}
+
+@media only screen and (max-width: 640px) {
+  .col3 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .header-slide {
+    height: 500px;
+    padding-top: 20px !important;
+    background-position-y: 0px !important;
+  }
+
+  .header-slide .welcome .header-slide .header-slide-content-title {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 770px) and (min-width: 641px) {
+  .header-slide {
+    height: 500px;
+    padding-top: 180px !important;
+    background-position-y: 0px !important;
+  }
+
+  .header-slide .welcome .header-slide .header-slide-content-title {
+    font-size: 14px !important;
+  }
+
+  .header-slide .header-slide-content-filter {
+    padding-top: 30px;
+  }
+
+  .header-slide .header-slide-content-filter .fliter-form form {
+    line-height: 37px;
+    font-size: 10px !important;
+  }
+
+  .header-slide .header-slide-content-filter .fliter-form img {
+    height: 14px;
+    margin-top: 18px;
+  }
+
+  .header-slide .header-slide-content-filter .fliter-form input,
+  .header-slide .header-slide-content-filter .fliter-form .btn {
+    font-size: 13px;
+  }
+
+  .hide-tablete {
+    display: none !important;
+  }
+
+  .welcome .header-nav .logo {
+    height: 75px !important;
+  }
 }
 

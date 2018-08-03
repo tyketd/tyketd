@@ -1,3 +1,224 @@
-.test{
-  color:red;
+.welcome{
+  background-color: #ffffff;
+  .header-nav{
+    color: #616161;
+    padding-bottom: 0px!important;
+    font-size: 13px;
+    .logo{
+      height: 40px;
+    }
+    .langue{
+      img{
+        height: 15px;
+      }
+    }
+    .header-text{
+      span{
+        font-weight: 500;
+        color: #ffc100;
+      }
+    }
+    .header-btn{
+      .btn{
+        font-size: 12px;
+        margin: 0 8px;
+      }
+    }
+    .link-auth{
+      line-height: 70px;
+      a{
+        color: #616161;
+        text-decoration: none;
+        &:hover{
+          color: #ffc100;;
+        }
+      }
+    }
+  }
+  .header-slide{
+    height: 500px;
+    padding-top: 280px;
+    background-position-y: -170px;
+    background-size: cover;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0; left: 0; bottom: 0px; right: 0;
+      background-color: rgba(0,0,0,0.3);
+    }
+    .header-slide-content-title{
+      font-weight: 500;
+      font-size: 26px;
+      display: block;
+      color: #fff;
+      z-index: 5;
+      span{
+        color: #ffc100;
+        text-decoration: underline;
+      }
+    }
+    .header-slide-content-filter{
+      padding-top: 30px;
+      .fliter-form{
+        display: block;
+        border-radius: 5px;
+        padding: 16px;
+        z-index: 5;
+        font-weight: 500;
+        background-color: #fff;
+        font-size: 13px;
+        form{
+          line-height: 37px;
+
+        }
+        img{
+          height: 14px;
+          margin-top: 18px;
+        }
+        input, .btn{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .wel-body{
+
+    background-color: #fff;
+    .wel-body-part1{
+      padding: 21px 0px 11px 0px;
+      img{
+        height: 300px;
+        border-radius: 10px;
+      }
+      .wel-body-part1-desc{
+        padding-top: 56px;
+        .desc{
+          font-weight: 800;
+          font-size: 26px;
+        }
+        .desc2{
+          font-weight: 600;
+        }
+        a{
+          text-decoration: none;
+          color: #fff;
+          background-color: #007bff;
+          padding: 8px 34px;
+          border-radius: 20px;
+        }
+      }
+    }
+    .wel-body-part2{
+      img{
+        border-radius: 10px;
+        height: 290px;
+      }
+      a{
+        text-decoration: none;
+      }
+      .title{
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .descrip{
+        color: #616161;
+      }
+
+    }
+
+
+  }
+
+  .footer{
+background-color: #f5f8fa;
+    .flang{
+      padding: 12px 16px;
+      background-color: #fff;
+      color: #616161;
+      font-size: 13px;
+      .description{
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    .f-part1{
+      a{
+        color: #000;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      img{
+        border-radius: 30px;
+        height: 54px;
+      }
+    }
+    .copyright{
+      font-size: 13px;
+      font-weight: 600;
+      color: #616161;
+    }
+    .f-part2{
+      background-color: #e8ebec;
+      .info{
+        font-size: 13px;
+        font-weight: 600;
+        color: #616161;
+      }
+    }
+  }
+}
+@media only screen and (max-width:640px) {
+  .col3 { width:100%; max-width:100%; }
+  .hide-mobile { display:none!important; }
+  .header-slide{
+    height: 500px;
+    padding-top: 20px!important;
+    background-position-y: 0px!important;
+    .welcome .header-slide .header-slide-content-title {
+
+      font-size: 14px!important;
+
+    }
+
+  }
+}
+
+@media only screen and (max-width:770px) and (min-width:641px) {
+  .header-slide{
+    height: 500px;
+    padding-top: 180px!important;
+    background-position-y: 0px!important;
+    .welcome .header-slide .header-slide-content-title {
+
+      font-size: 14px!important;
+
+    }
+
+    .header-slide-content-filter{
+      padding-top: 30px;
+      .fliter-form{
+
+        form{
+          line-height: 37px;
+          font-size: 10px!important;
+        }
+        img{
+          height: 14px;
+          margin-top: 18px;
+        }
+        input, .btn{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .hide-tablete{
+    display: none!important;
+  }
+  .welcome .header-nav .logo {
+    height: 75px!important;
+  }
 }

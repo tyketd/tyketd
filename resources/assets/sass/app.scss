@@ -7,6 +7,58 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import "bootstrap";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/alerts";
+@import "bootstrap/badges";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/button-groups";
+@import "bootstrap/button-groups";
+@import "bootstrap/carousel";
+@import "bootstrap/close";
+@import "bootstrap/code";
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+@import "bootstrap/forms";
+@import "bootstrap/glyphicons";
+@import "bootstrap/grid";
+@import "bootstrap/input-groups";
+@import "bootstrap/jumbotron";
+@import "bootstrap/labels";
+@import "bootstrap/list-group";
+@import "bootstrap/media";
+@import "bootstrap/mixins";
+@import "bootstrap/modals";
+@import "bootstrap/navbar";
+@import "bootstrap/navs";
+@import "bootstrap/normalize";
+@import "bootstrap/pager";
+@import "bootstrap/panels";
+@import "bootstrap/popovers";
+@import "bootstrap/print";
+@import "bootstrap/progress-bars";
+@import "bootstrap/responsive-embed";
+@import "bootstrap/responsive-utilities";
+@import "bootstrap/scaffolding";
+@import "bootstrap/tables";
+@import "bootstrap/theme";
+@import "bootstrap/tables";
+@import "bootstrap/thumbnails";
+@import "bootstrap/tooltip";
+@import "bootstrap/type";
+@import "bootstrap/utilities";
+@import "bootstrap/variables";
+@import "bootstrap/wells";
+
+//register css
+@import "register/auth";
+@import "register/blues";
+@import "register/style";
+@import "register/variables";
+
+
+
 
 .navbar-laravel {
   background-color: #fff;

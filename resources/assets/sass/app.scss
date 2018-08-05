@@ -7,8 +7,12 @@
 
 
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// Bootstrap 4.1.3
+@import '../bootstrap-4.1.3/scss/bootstrap';
 
 // Welcome view
-@import "../../views/welcome/welcome";
+@import "../Welcome/scss/welcome";
+
+
+// Dashboard view
+@import "../Dashboard/scss/index";

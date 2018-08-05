@@ -1,32 +1,7 @@
-@extends('base')
+@extends('layouts.app')
 
 @section('content')
    <div class=" welcome">
-       <div class=" container">
-           <div class="row header-nav p-2">
-               <div class="col-sm d-flex flex-lg-column flex-row">
-                   <img class="d-flex  logo" src="{{asset('img/logo.png')}}" alt="">
-                   <span  class="slogan d-flex hide-tablete hide-mobile">Transport de colis entre particulier</span>
-               </div>
-               <div class="col-sm">
-                   <div class="flex-column">
-                       <div class="d-flex header-text justify-content-end "><span >Rentablissez votre voyage !  <i class="glyphicon glyphicon-pencil"> </i> </span></div>
-                       <div class="d-flex flex-column flex-md-row p-2 header-btn">
-                           <div class="d-flex langue p-2">
-                               <img src="{{asset('img/flagfr.png')}}" alt="">
-                           </div>
-                           <div class="d-flex"><button type="button" class="btn btn-outline-primary">Trouver un voyageur</button></div>
-                           <div class="d-flex"><button class="btn btn-primary" type="submit">Publier un trajet</button></div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-sm d-flex flex-row link-auth">
-                   <a href="#" class="d-flex p-2">Inscription</a>
-                   <a href="#" class="d-flex p-2">Connexion</a>
-               </div>
-           </div>
-
-       </div>
        <div class="header-slide " style="background-image: url('{{asset('img/delivery.jpg')}}') ">
            <div class="container">
                <div class="flex-column">
@@ -95,49 +70,6 @@
             </div>
 
         </div>
-       <footer class="pt-5 footer">
-           <div class="container pb-2">
-               <div class="row f-part1">
-                   <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">
-                       <a href="#" class="d-flex p-2">Comment ça marche </a>
-                       <a href="#" class="d-flex p-2">Contact</a>
-                   </div>
-                   <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">
-                       <a href="#" class="d-flex p-2">Qui sommes nous ? </a>
-                       <a href="#" class="d-flex p-2">Conditions générales</a>
-                   </div>
-                   <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">
-                       <a href="#" class="d-flex p-2">Foire aux questions </a>
-                       <a href="#" class="d-flex p-2">Nous recrutons</a>
-                   </div>
-                   <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">
-                       <div class="d-flex p-2 flang flex-column">
-                           <span class="d-flex"> Langue </span>  <span class="d-flex description">Français (Belgique)</span>
-                       </div>
-                       <div class="d-flex flex-row p-2">
-                           <img src="{{asset('img/facebook.png')}}" alt="" class="d-flex p-2">
-                           <img src="{{asset('img/twitter.png')}}" alt="" class="d-flex p-2">
-                           <img src="{{asset('img/insta.png')}}" alt="" class="d-flex p-2">
-                           <img src="{{asset('img/youtube.png')}}" alt="" class="d-flex p-2">
-                       </div>
-                   </div>
-               </div>
-               <div class="row">
-                   <span class="copyright p-2">TYKETD, 2018 @</span>
-               </div>
-           </div>
-           <div class="f-part2">
-               <div class="container">
-                   <div class="row">
-                       <div class="p-2 info">
-                           TYKETD est le premier reseau de covoiturage au monde, plus besoin d'aller en ville pour quitter la ville :
-                           nous allons en relation passagers et conducteurs prêts à partager leur trajet en voiture pour leur permettre d'aller partout
-                           , et sans changement.
 
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </footer>
    </div>
 @endsection

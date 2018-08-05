@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/test','Welcome\WelcomeController@index')->name("home");
+Route::get('/','Welcome\WelcomeController@index')->name("home");
 
 Route::get('/dashboard', 'Dashboard\DashboardController@index')->name('dashboard');
 Route::get('/dashboard/account', 'Dashboard\DashboardController@account')->name('dashboard.account');

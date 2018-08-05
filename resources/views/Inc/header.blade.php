@@ -35,6 +35,8 @@
                     </form>
                 </div>
             @endguest
+            <a  class="d-flex p-2" href="{{ route("locale",["locale"=>"fr"]) }}">{{ __('welcome.locale') }}</a>
+
         </div>
     </div>
 

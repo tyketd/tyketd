@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','Welcome\WelcomeController@index')->name("home");
+Route::get('/','Welcome\WelcomeController@index')->name("welcome");
 
 Route::get('/dashboard', 'Dashboard\DashboardController@index')->name('dashboard');
 Route::get('/dashboard/account', 'Dashboard\DashboardController@account')->name('dashboard.account');
@@ -21,3 +21,5 @@ Route::post('/dashboard/account/general', 'Dashboard\DashboardController@update'
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/locale/{locale}', 'Welcome\WelcomeController@locale')->name('locale');

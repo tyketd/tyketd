@@ -16,6 +16,9 @@ class WelcomeController extends Controller
     public function locale ($locale){
 
         App::setLocale($locale);
+        if (App::isLocale('fr')) {
+           // dump($locale);
+        }
         return redirect()->back();
     }
 }

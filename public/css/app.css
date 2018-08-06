@@ -15366,6 +15366,7 @@ readers do not read off random characters that represent icons */
 .welcome .header-nav .logo,
 .container .header-nav .logo {
   height: 40px;
+  width: 40px;
 }
 
 .welcome .header-nav .langue img,
@@ -15644,5 +15645,90 @@ readers do not read off random characters that represent icons */
   .welcome .header-nav .logo {
     height: 75px !important;
   }
+}
+
+#help {
+  position: fixed;
+  bottom: 0px;
+  right: 32px;
+  background-color: #00aff5;
+  padding: 32px;
+  color: #fff;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+#help #btnhidehelp {
+  position: absolute;
+  right: 22px;
+  color: #313131;
+  top: 9px;
+}
+
+#help .blockenligne {
+  padding: 4px 8px;
+  border-radius: 15px;
+  background-color: #eee;
+  color: #616161;
+  position: absolute;
+  right: 60px;
+  font-size: 12px;
+  top: 0px;
+}
+
+#help .blockenligne .circlegreen {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+#help .groupfoto {
+  position: absolute;
+  right: 38px;
+  top: -45px;
+}
+
+#help .groupfoto .img1 {
+  margin-right: -25px;
+}
+
+#help .groupfoto .img3 {
+  margin-left: -25px;
+}
+
+#help img {
+  width: 60px;
+  border-radius: 50%;
+  height: 60px;
+  padding: 0px;
+  border: 1px solid #fff;
+}
+
+#help a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#help .part1 {
+  width: 317px;
+}
+
+#help .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#help .desc {
+  font-size: 14px;
+}
+
+#help .linkhelp {
+  padding: 8px 16px;
+  border-radius: 38%;
+  font-weight: 600;
+  background-color: #054752;
 }
 

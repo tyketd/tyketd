@@ -67,7 +67,8 @@ body {
     line-height: 1.6;
     color: #212529;
     text-align: left;
-    background-color: #EDEDED
+    background-color: #EDEDED;
+    font-family: gt-eesti, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 [tabindex="-1"]:focus {
@@ -9077,4 +9078,90 @@ a.text-dark:focus, a.text-dark:hover {
     padding: 0 20px 20px 0px;
     font-size: 24px !important;
     font-family: gt-eesti, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.footer-header{
+
+    font-family: gt-eesti, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-top: 0;
+    color: #708C91;
+    width: 80%;
+    padding: 48px 0 0;
+    background-color: #EDEDED;
+    font-size: 16px;
+    text-align: center;
+}
+.copy{
+    text-align: left;
+    font-size: 12px;
+    font-family: gt-eesti, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #708C91;
+    margin: 2% 0 0 0;
+
+}
+.footer-header a {
+    color: #708C91;
+}
+.footer-content{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+.footer-list{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-list li {
+    line-height: 2;
+}
+.footer-link{
+    width: 219px;
+    margin-right: 32px;
+    text-align: left;
+    color: #708C91;
+}
+.text{
+    color: #708C91;
+    font-size: 12px;
+}
+.footer-text{
+    background-color: #ddd;
+    text-align: left;
+    margin: 2% 0 0 0;
+}
+.header{
+    background: #fff;
+    padding: 20px;
+    border-top: 0;
+    color: #666;
+}
+.title-login{
+    color: #054752;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.06;
+}
+.content-login{
+    width: 800px;
+    margin: 8% auto;
+}
+.tykedt-block{
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 20%;
+
+}
+.tykedt-input{
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: border-box;
+    color: #054752;
+    background-color: #EDEDED;
+    border-radius: 16px;
+
+    box-shadow: none;
+    margin: 2% 2% 2% 2%;
+    padding: 2% 2% 2% 2%;
 }

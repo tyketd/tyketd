@@ -126,6 +126,41 @@
         </form>
 
     </div><!-- /.form-box -->
+    <div class="footer-header">
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="footer-list ">
+                        <li class="footer-link "> <a  href="#">Comment sa marche</a></li>
+                        <li class="footer-link"> <a href="#">Qui sommes nous ?</a></li>
+                        <li class="footer-link"> <a  href="#">Conditions G&eacute;n&eacute;rales</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer-list ">
+                        <li class="footer-link"> <a  href="#">Assurance et covoiturage</a></li>
+                        <li class="footer-link"> <a  href="#">Foire aux questions</a></li>
+                        <li class="footer-link"> <a  href="#">Transparence des plateformes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer-list ">
+                        <li class="footer-link"> <a  href="#">Trajets quotidien tyketd</a></li>
+                        <li class="footer-link"> <a  href="#">Contact</a></li>
+                        <li class="footer-link"> <a  href="#">Nous recrutons</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                &copy; <script>
+                    document.write(new Date().getFullYear())
+                </script>. All rights reserved. TYKETD
+            </div>
+            <div class="footer-text">
+                <p>lorem ipsum</p>
+            </div>
+        </div>
+    </div>
 </div><!-- /.register-box -->
 @endsection
 @section('js')

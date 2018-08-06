@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-   <div class=" welcome">
+   <div class=" welcome" id="Welcome" data-page="Welcome">
        <div class="header-slide " style="background-image: url('{{asset('img/delivery.jpg')}}') ">
            <div class="container">
                <div class="flex-column">

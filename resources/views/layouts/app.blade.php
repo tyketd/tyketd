@@ -30,7 +30,9 @@
     @include('Inc.header');
 
     <!-- another page must use this -->
-    @yield('content')
+    <div id="app">
+        @yield('content')
+    </div>
 
 <!-- Include footer -->
     @include('Inc.footer');

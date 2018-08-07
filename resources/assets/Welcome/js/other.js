@@ -22,8 +22,8 @@ $(function () {
                     }
                 });
             };
-            this.Promp = function (message) {
-                bootbox.confirm(message, (result)=>{
+            this.Prompt = function (message) {
+                bootbox.prompt(message, (result)=>{
                     if(result){
                         console.log("validate .....");
                     }
@@ -34,17 +34,17 @@ $(function () {
 
     let MyWelcomClass = new WelcomeClass();
 
-    if(MyWelcomClass.data("page")==="Welcome"){
+    if(MyWelcomClass.Id.data("page")==="Welcome"){
         //do  something  here
 
         // alert
-        //MyWelcomClass.Block.MyAlert("Simple alert");
+       // MyWelcomClass.Block.MyAlert("Simple alert");
 
         //Promp
-        //MyWelcomClass.Promp("Entrer something");
+       // MyWelcomClass.Prompt("Entrer something");
 
         //confirm
-        //MyWelcomClass.Confirm("Are you sure to do this ?");
+       // MyWelcomClass.Confirm("Are you sure to do this ?");
     }
 
 });

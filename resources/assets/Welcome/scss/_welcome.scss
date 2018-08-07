@@ -1,5 +1,5 @@
 .welcome, .container{
-  background-color: #ffffff;
+  //background-color: #ffffff;
   .header-nav{
     color: #616161;
     padding-bottom: 0px!important;
@@ -132,44 +132,7 @@
 
   }
 
-  .footer{
-background-color: #f5f8fa;
-    .flang{
-      padding: 12px 16px;
-      background-color: #fff;
-      color: #616161;
-      font-size: 13px;
-      .description{
-        color: #000;
-        font-size: 16px;
-        font-weight: 600;
-      }
-    }
-    .f-part1{
-      a{
-        color: #000;
-        font-weight: 500;
-        text-decoration: none;
-      }
-      img{
-        border-radius: 30px;
-        height: 54px;
-      }
-    }
-    .copyright{
-      font-size: 13px;
-      font-weight: 600;
-      color: #616161;
-    }
-    .f-part2{
-      background-color: #e8ebec;
-      .info{
-        font-size: 13px;
-        font-weight: 600;
-        color: #616161;
-      }
-    }
-  }
+
 }
 @media only screen and (max-width:640px) {
   .col3 { width:100%; max-width:100%; }
@@ -221,79 +184,5 @@ background-color: #f5f8fa;
   }
   .welcome .header-nav .logo {
     height: 75px!important;
-  }
-}
-
-#help{
-  position: fixed;
-  bottom: 0px;
-  right: 32px;
-  background-color: #00aff5;
-  padding: 32px;
-  color: #fff;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
-  
-  #btnhidehelp{
-    position: absolute;
-    right: 22px;
-    color: #313131;
-    top: 9px;
-  }
-  .blockenligne{
-    .circlegreen{
-      width: 10px;
-      height: 10px;
-      margin-right: 5px;
-      margin-top: 5px;
-      border-radius: 50%;
-      background-color: green;
-    }
-    padding: 4px 8px;
-    border-radius: 15px;
-    background-color: #eee;
-    color: #616161;
-    position: absolute;
-    right: 60px;
-    font-size: 12px;
-    top: 0px;
-  }
-  .groupfoto{
-    position: absolute;
-    right: 38px;
-    top: -45px;
-    .img1{
-      margin-right: -25px;
-    }
-    .img3{
-      margin-left: -25px;
-    }
-  }
-  img{
-    width: 60px;
-    border-radius: 50%;
-    height: 60px;
-    padding: 0px;
-    border: 1px solid #fff;
-  }
-  a{
-    text-decoration: none;
-    color: #fff;
-  }
-  .part1{
-    width: 317px;
-  }
-  .title{
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .desc{
-    font-size: 14px;
-  }
-  .linkhelp{
-    padding: 8px 16px;
-    border-radius: 38%;
-    font-weight: 600;
-    background-color: #054752;
   }
 }

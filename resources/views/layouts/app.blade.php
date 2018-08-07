@@ -36,6 +36,7 @@
 
 <!-- Include footer -->
     @include('Inc.footer');
+    @include('Inc.help');
 </div>
 
 

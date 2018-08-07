@@ -157,7 +157,7 @@
                 </script>. All rights reserved. TYKETD
             </div>
             <div class="footer-text">
-                <p>lorem ipsum</p>
+                <p>Tyketd est le premier r&eacute;seau de covoiturage au monde. Plus besoin d&apos;aller en ville pour quitter la ville : nous mettons en relation passagers et conducteurs pr&ecirc;ts &agrave; partager leur trajet en voiture pour leur permettre d&apos;aller partout, et sans changement.</p>
             </div>
         </div>
     </div>

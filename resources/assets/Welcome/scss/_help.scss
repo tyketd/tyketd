@@ -67,9 +67,17 @@
     font-size: 14px;
   }
   .linkhelp{
-    padding: 8px 16px;
-    border-radius: 38%;
+    padding: 4px 23px;
+    border-radius: 55px;
     font-weight: 600;
+    font-size: 12px;
     background-color: #054752;
+  }
+
+}
+.hidehelp{
+  bottom: -133px!important;
+  .blockenligne{
+    top: -24px!important;
   }
 }

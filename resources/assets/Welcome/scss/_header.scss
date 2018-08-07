@@ -1,0 +1,48 @@
+#header{
+  .header-nav{
+    color: #616161;
+    padding-bottom: 0px!important;
+    font-size: 13px;
+    .logo{
+      height: 80px;
+      width: 80px;
+    }
+    .slogan{
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .langue{
+      img{
+        height: 15px;
+      }
+    }
+    .header-text{
+      span{
+        font-weight: 500;
+        color: #ffc100;
+      }
+    }
+    .header-btn{
+      .btn{
+        font-size: 12px;
+        margin: 0 8px;
+      }
+    }
+    .link-auth{
+      line-height: 70px;
+      a{
+        color: #616161;
+        text-decoration: none;
+        &:hover{
+          color: #ffc100;;
+        }
+      }
+    }
+  }
+  @media (max-width:767px){.hidden-xs{display:none!important}}
+  @media (min-width:768px) and (max-width:991px)
+  {.hidden-sm{display:none!important}}
+  @media (min-width:992px) and (max-width:1199px)
+  {.hidden-md{display:none!important}}
+  @media (min-width:1200px){.hidden-lg{display:none!important}}
+}

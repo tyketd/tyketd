@@ -1,0 +1,39 @@
+.footer{
+  background-color: #f5f8fa;
+  .flang{
+    padding: 12px 16px;
+    background-color: #fff;
+    color: #616161;
+    font-size: 13px;
+    .description{
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .f-part1{
+    a{
+      color: #000;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    img{
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .copyright{
+    font-size: 13px;
+    font-weight: 600;
+    color: #616161;
+  }
+  .f-part2{
+    background-color: #e8ebec;
+    .info{
+      font-size: 13px;
+      font-weight: 600;
+      color: #616161;
+    }
+  }
+}

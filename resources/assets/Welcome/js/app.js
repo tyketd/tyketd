@@ -1,1 +1,2 @@
 require("./other");
+require("./help");

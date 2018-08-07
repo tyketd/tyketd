@@ -1,41 +1,6 @@
 .welcome, .container{
   //background-color: #ffffff;
-  .header-nav{
-    color: #616161;
-    padding-bottom: 0px!important;
-    font-size: 13px;
-    .logo{
-      height: 40px;
-      width: 40px;
-    }
-    .langue{
-      img{
-        height: 15px;
-      }
-    }
-    .header-text{
-      span{
-        font-weight: 500;
-        color: #ffc100;
-      }
-    }
-    .header-btn{
-      .btn{
-        font-size: 12px;
-        margin: 0 8px;
-      }
-    }
-    .link-auth{
-      line-height: 70px;
-      a{
-        color: #616161;
-        text-decoration: none;
-        &:hover{
-          color: #ffc100;;
-        }
-      }
-    }
-  }
+
   .header-slide{
     height: 500px;
     padding-top: 280px;
@@ -144,9 +109,13 @@
     .welcome .header-slide .header-slide-content-title {
 
       font-size: 14px!important;
-
     }
-
+  }
+  #header .header-nav .slogan {
+    font-size: 10px!important;
+  }
+  .welcome .wel-body .wel-body-part1, .welcome .wel-body .wel-body-part1 .wel-body-part1-desc {
+    padding-top: 0px!important;
   }
 }
 

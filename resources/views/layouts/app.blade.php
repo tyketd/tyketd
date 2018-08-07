@@ -15,10 +15,11 @@
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
      -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Styles -->
-
+    <link rel='shortcut icon' type='image/png' href='{{asset("img/logoT.png")}}' />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('stylesheet')
@@ -27,7 +28,7 @@
 
 <div id="app">
     <!-- Include header -->
-    @include('Inc.header');
+    @include('Inc.header')
 
     <!-- another page must use this -->
     <div id="app">
@@ -35,8 +36,8 @@
     </div>
 
 <!-- Include footer -->
-    @include('Inc.footer');
-    @include('Inc.help');
+    @include('Inc.footer')
+    @include('Inc.help')
 </div>
 
 

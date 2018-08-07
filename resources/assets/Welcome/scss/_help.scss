@@ -9,12 +9,12 @@
   color: #fff;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
-
   #btnhidehelp{
     position: absolute;
     right: 22px;
     color: #313131;
     top: 9px;
+    cursor: pointer;
   }
   .blockenligne{
     .circlegreen{
@@ -73,11 +73,15 @@
     font-size: 12px;
     background-color: #054752;
   }
-
 }
 .hidehelp{
+  animation: mymove 5s ;
   bottom: -133px!important;
   .blockenligne{
     top: -24px!important;
+  }
+  @keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: -133px;}
   }
 }

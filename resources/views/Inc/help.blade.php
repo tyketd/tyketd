@@ -1,4 +1,4 @@
-<div class="help hide-mobile" id="help">
+<div class="help hide-mobile" id="help" data-page="Help">
     <div class="d-flex flex-column">
         <div class="d-flex flex-row justify-content-end groupfoto">
             <img src="{{asset('img/tof.jpg')}}" alt="" class="d-flex img1">

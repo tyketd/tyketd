@@ -26,7 +26,7 @@
        </div>
         <div class=" wel-body pb-5">
             <div class="container">
-                <div class="row wel-body-part1 pt-5">
+                <div class="row wel-body-part1 pt-5 pt-sm-1">
                     <div class="col-md-12 col-lg hide-mobile">
                         <img src="{{asset('img/tr1.png')}}" alt="">
                     </div>

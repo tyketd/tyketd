@@ -1,0 +1,105 @@
+//
+// Style for register and login page
+// --------------------------------------------------
+@import "variables";
+
+.header{
+  background: #fff;
+  padding: 20px;
+  border-top: 0;
+  color: #666;
+}
+.header-card{
+  margin-left: -20px;
+  font-size: 16px;
+}
+#app{
+  z-index: 220;
+  position: relative;
+  max-width: 1000px;
+  height: 62px;
+  padding: 0 32px;
+  margin: 0 auto;
+  line-height: 62px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+@media (min-width: 800px){
+  .content-login{
+    width: 360px;
+    margin: 10% auto;
+  }
+}
+.content-login{
+  width: 800px;
+  margin: 8% auto;
+}
+
+.title-login{
+  color: $color;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.06;
+}
+.tykedt-form{
+
+}
+.tykedt-block{
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 20%;
+
+}
+.tykedt-input{
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  color: #054752;
+  background-color: $background-register;
+  border-radius: 16px;
+
+  box-shadow: none;
+  margin: 2% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
+}
+body{
+
+  font-family: $global-font-family;
+  -webkit-font-smoothing: antialiased;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-backface-visibility: hidden;
+  background: $background-register;
+  color: $color;
+}
+.headline, .headline_outer{
+  position: relative;
+
+}
+.cmsmasters_color_scheme_first{
+
+}
+.headline_outer{
+  font-family:'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+  font-size:11px;
+  line-height:20px;
+  font-weight:normal;
+  font-style:normal;
+  text-transform:none;
+}
+.headline_text{
+  text-align: right;
+}
+.align_right{
+  text-align: right;
+}
+.title{
+  width: 620px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}

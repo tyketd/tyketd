@@ -45,13 +45,14 @@
     }
     .imgprofile{
       position: relative;
+      
       padding-top: 8px;
       img{
         height: 30px;
         widows: 30px;
         border-radius: 50%;
       }
-      .rednotificationnumber{
+      .circlered{
         font-size: 10px;
         padding: 4px;
         height: 15px;
@@ -59,13 +60,53 @@
         line-height: 7px;
         text-align: center;
         color: #f6f4f4;
-        right: -7px;
-        top: 23px;
+
         position: absolute;
         border-radius: 50%;
         background-color: red;
       }
+      .rednotificationnumber{
+
+        line-height: 7px;
+        text-align: center;
+
+        right: -7px;
+        top: 23px;
+      }
+      .detailmenu{
+        position: absolute;
+        display: none;
+        width: 200px;
+        top: 67px;
+        background-color: #fff;
+        left: -160px;
+        z-index: 25;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+        a{
+          line-height: 15px;
+          position: relative;
+          &:hover{
+            background-color: #eee;
+          }
+          .rednotif{
+            right: 10px;
+          }
+        }
+      }
     }
+
+  }
+  .backdrop{
+    position: fixed;
+    top: 0;
+    display: none;
+    //background-color: red;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    top: 0;
   }
   @media (max-width:767px){.hidden-xs{display:none!important}}
   @media (min-width:768px) and (max-width:991px)

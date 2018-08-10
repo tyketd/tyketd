@@ -4,7 +4,7 @@
   bottom: 0px;
   right: 32px;
   z-index: 20;
-  background-color: #00aff5;
+  background-color: $bluelink;
   padding: 32px;
   color: #fff;
   border-top-right-radius: 25px;
@@ -75,7 +75,7 @@
   }
 }
 .hidehelp{
-  animation: mymove 5s ;
+  animation: mymove 1s ;
   bottom: -133px!important;
   .blockenligne{
     top: -24px!important;

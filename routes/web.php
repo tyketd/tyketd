@@ -12,6 +12,7 @@
 */
 
 Route::get('/','Welcome\WelcomeController@index')->name("welcome");
+Route::get('/reservation','Reservation\ReservationController@index')->name("reservation");
 
 Route::get('/dashboard', 'Dashboard\DashboardController@index')->name('dashboard');
 Route::get('/dashboard/account', 'Dashboard\DashboardController@account')->name('dashboard.account');

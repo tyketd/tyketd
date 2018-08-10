@@ -27,7 +27,7 @@ $(function () {
             MyHeaderClass.params.menu.fadeIn();
             e.preventDefault();
         });
-        MyHeaderClass.params.backdrop.click(function(){
+        MyHeaderClass.params.backdrop.click(function(e){
             MyHeaderClass.params.backdrop.fadeOut();
             MyHeaderClass.params.menu.fadeOut();
             e.preventDefault();

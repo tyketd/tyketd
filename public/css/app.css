@@ -15687,8 +15687,8 @@ readers do not read off random characters that represent icons */
 }
 
 .hidehelp {
-  -webkit-animation: mymove 5s;
-          animation: mymove 5s;
+  -webkit-animation: mymove 1s;
+          animation: mymove 1s;
   bottom: -133px !important;
 }
 
@@ -15852,5 +15852,26 @@ readers do not read off random characters that represent icons */
   #header .hidden-lg {
     display: none !important;
   }
+}
+
+#reservation {
+  font-size: 14px;
+  color: #054752;
+}
+
+#reservation .linkcategorie a {
+  text-decoration: none;
+  color: #054752;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #eee;
+}
+
+#reservation .linkcategorie .actiF {
+  background-color: #ffc100;
+}
+
+#reservation .title {
+  font-weight: 500;
 }
 

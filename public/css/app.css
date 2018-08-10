@@ -15762,6 +15762,32 @@ readers do not read off random characters that represent icons */
   color: #ffc100;
 }
 
+#header .header-nav .imgprofile {
+  position: relative;
+  padding-top: 8px;
+}
+
+#header .header-nav .imgprofile img {
+  height: 30px;
+  widows: 30px;
+  border-radius: 50%;
+}
+
+#header .header-nav .imgprofile .rednotificationnumber {
+  font-size: 10px;
+  padding: 4px;
+  height: 15px;
+  width: 15px;
+  line-height: 7px;
+  text-align: center;
+  color: #f6f4f4;
+  right: -7px;
+  top: 23px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: red;
+}
+
 @media (max-width: 767px) {
   #header .hidden-xs {
     display: none !important;

@@ -67,6 +67,10 @@
                     </div>
                     @endguest
                     <a  class="d-flex p-2" href="{{ route("locale",["locale"=>"fr"]) }}">{{ __('welcome.locale') }}</a>
+                    <div class="imgprofile">
+                        <a href=""><img src="{{asset('img/tof.jpg')}}" alt=""></a>
+                        <span class="rednotificationnumber">5</span>
+                    </div>
 
             </div>
         </div>

@@ -47,4 +47,6 @@ $(function () {
        // MyWelcomClass.Confirm("Are you sure to do this ?");
     }
 
+    $('#header .dropdown-toggle').dropdown();
+
 });

@@ -1,4 +1,4 @@
-<div class="" id="header">
+<div class="" id="header" data-page="Hedear">
     <div class="pos-f-t hidden-sm hidden-lg hidden-md">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark d-flex flex-column justify-content-center">
@@ -7,7 +7,15 @@
                 @guest
                 <a class="d-flex text-white p-2 flex-row r" href="{{ route('login') }}"><span>{{ __('Login') }}</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href="{{ route('register') }}"><span>{{ __('Register') }}</span></a>
-                @else
+                <a  class="d-flex text-white p-2 flex-row " href=""><span>Tableau de bord</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href=""><span>Trajets publiés</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href=""><span>Mes reservations</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href=""><span>Messages</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href=""><span>Alertes</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href=""><span>Profil</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href=""><span>Virements en attente</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href=""><span>Payements effectués</span></a>
+
                     <a class="d-flex text-white p-2 flex-row " href="{{ route('dashboard') }}"><span>Dashboard</span></a>
                     <a class="d-flex  text-white p-2 flex-row " href="{{ route('logout') }}"
                        onclick="event.preventDefault();
@@ -67,11 +75,26 @@
                     </div>
                     @endguest
                     <a  class="d-flex p-2" href="{{ route("locale",["locale"=>"fr"]) }}">{{ __('welcome.locale') }}</a>
+                    <div class="imgprofile">
+                        <a href="" class="btnopenmenu"><img src="{{asset('img/tof.jpg')}}" alt=""></a>
+                        <span class="rednotificationnumber circlered">5</span>
+                        <div class="detailmenu flex-column">
+                            <a href="#" class="d-flex p-2 ">Tableau de bord <span class="rednotif circlered">3</span></a>
+                            <a href="" class="d-flex p-2">Trajets publiés</a>
+                            <a href="" class="d-flex p-2">Mes reservations</a>
+                            <a href="" class="d-flex p-2">Messages</a>
+                            <a href="" class="d-flex p-2">Alertes <span class="rednotif circlered">2</span></a>
+                            <a href="" class="d-flex p-2">Profil</a>
+                            <a href="" class="d-flex p-2">Virements en attente</a>
+                            <a href="" class="d-flex p-2">Payements effectués</a>
+                            <a href="" class="d-flex p-2">Se deconnecter</a>
+                        </div>
+                    </div>
 
             </div>
         </div>
 
     </div>
-
+<div class="backdrop"></div>
 </div>
 

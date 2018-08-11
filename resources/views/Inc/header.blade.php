@@ -30,11 +30,11 @@
                 <a  class="d-flex  text-white p-2 flex-row " href="{{ route("locale",["locale"=>"fr"]) }}"><span>{{ __('welcome.locale') }}</span></a>
             </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar text-black navbar-white bg-white">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon text-black"><i class="fa fa-bars m-2" aria-hidden="true"></i></span>
             </button>
-            <span  class="text-white">Rentablissez votre voyage !  </span>
+            <span  class="text-black">Rentablissez votre voyage !  </span>
         </nav>
     </div>
     <div class="container pb-1">

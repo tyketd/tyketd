@@ -15555,6 +15555,7 @@ readers do not read off random characters that represent icons */
 
 .footer {
   background-color: #f5f8fa;
+  color: #054752;
 }
 
 .footer .flang {
@@ -15716,6 +15717,10 @@ readers do not read off random characters that represent icons */
   }
 }
 
+#header .text-black {
+  color: #111 !important;
+}
+
 #header #navbarToggleExternalContent a {
   border-bottom: 1px solid #fff;
 }
@@ -15859,6 +15864,10 @@ readers do not read off random characters that represent icons */
   color: #054752;
 }
 
+#reservation .text-green {
+  color: #00a65a !important;
+}
+
 #reservation .linkcategorie a {
   text-decoration: none;
   color: #054752;
@@ -15873,5 +15882,51 @@ readers do not read off random characters that represent icons */
 
 #reservation .title {
   font-weight: 500;
+}
+
+#reservation .reservrow {
+  width: 300px;
+}
+
+#reservation .reservationitem {
+  color: #054752;
+}
+
+#reservation .reservationitem i {
+  margin: 5px;
+}
+
+#reservation .reservationitem .reservationheader {
+  font-weight: 600;
+}
+
+#reservation .reservationitem .reservationcontent {
+  position: relative;
+}
+
+#reservation .reservationitem .reservationcontent .contentdesc .linkdesc {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  text-decoration: none;
+  color: #00aff5;
+}
+
+@media (max-width: 767px) {
+  #reservation .border-right {
+    border-right: none !important;
+  }
+
+  #reservation .reservationitem {
+    background-color: #eee;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    margin: 4px;
+  }
+
+  #reservation .reservationitem .linkdesc {
+    position: relative !important;
+    margin-top: 12px;
+  }
 }
 

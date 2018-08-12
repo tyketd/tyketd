@@ -1,7 +1,5 @@
 #reservation{
-  .text-green {
-    color: #00a65a !important
-  }
+
   font-size: 14px;
   color:  $bluetext;
   .linkcategorie{
@@ -52,4 +50,7 @@
       }
     }
   }
+}
+.text-green {
+  color: #00a65a !important
 }

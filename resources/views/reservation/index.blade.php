@@ -4,7 +4,7 @@
     @endsection
 
 @section('content')
-    <div id="reservation" class="container" data-page="Reservation">
+    <div id="reservation" class="container pt-3" data-page="Reservation">
         <div class="row linkcategorie">
             <div class="col d-flex flex-row">
                 <a href="#" class="d-flex p-2">En cours</a>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="d-flex pl4   flex-column pl-4 contentdesc">
                         <div class="d-flex description">Trajet effectué </div>
-                        <a href="#" class="d-flex linkdesc"><i class="fa fa-arrow-right" aria-hidden="true"></i> Voir détail de la réservation</a>
+                        <a href="{{ route('detailReservation',1) }}" class="d-flex linkdesc"><i class="fa fa-arrow-right" aria-hidden="true"></i> Voir détail de la réservation</a>
                     </div>
                 </div>
             </div>

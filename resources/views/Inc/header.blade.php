@@ -9,7 +9,7 @@
                 <a  class="d-flex text-white p-2 flex-row " href="{{ route('register') }}"><span>{{ __('Register') }}</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Tableau de bord</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Trajets publiés</span></a>
-                <a  class="d-flex text-white p-2 flex-row " href=""><span>Mes reservations</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href="{{ route('reservation') }}"><span>Mes reservations</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Messages</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Alertes</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Profil</span></a>
@@ -81,7 +81,7 @@
                         <div class="detailmenu flex-column">
                             <a href="#" class="d-flex p-2 ">Tableau de bord <span class="rednotif circlered">3</span></a>
                             <a href="" class="d-flex p-2">Trajets publiés</a>
-                            <a href="" class="d-flex p-2">Mes reservations</a>
+                            <a href="{{ route('reservation') }}" class="d-flex p-2">Mes reservations</a>
                             <a href="" class="d-flex p-2">Messages</a>
                             <a href="" class="d-flex p-2">Alertes <span class="rednotif circlered">2</span></a>
                             <a href="" class="d-flex p-2">Profil</a>

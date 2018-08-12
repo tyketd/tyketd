@@ -1,0 +1,49 @@
+#SearchColis{
+  background-color: #fff;
+  font-size: 14px;
+  color:  $bluetext;
+  .imglist{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .blimg{
+    width: 200px;
+  }
+  .itemsearch{
+    &:hover{
+      cursor: pointer;
+      background-color: #eee;
+    }
+  }
+
+
+  .cardheader{
+    border-top: 3px solid #5eb671!important;
+  }
+
+  .cardheader{
+    img{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+  @media (max-width:767px)
+  {
+    .cardheader{
+      margin-bottom: 12px!important;
+    }
+   .itemsearch{
+     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+     margin-bottom: 12px!important;
+   }
+    .paramsearch{
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12)!important;
+      span, input{
+        margin: 8px 0px!important;
+      }
+    }
+    .w-50{width:100%!important}
+  }
+}

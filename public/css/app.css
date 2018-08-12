@@ -20850,6 +20850,8 @@ table.text-center th {
 
 #SearchColis {
   background-color: #fff;
+  font-size: 14px;
+  color: #054752;
 }
 
 #SearchColis .imglist {
@@ -20860,5 +20862,46 @@ table.text-center th {
 
 #SearchColis .blimg {
   width: 200px;
+}
+
+#SearchColis .itemsearch:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+#SearchColis .cardheader {
+  border-top: 3px solid #5eb671 !important;
+}
+
+#SearchColis .cardheader img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  #SearchColis .cardheader {
+    margin-bottom: 12px !important;
+  }
+
+  #SearchColis .itemsearch {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    margin-bottom: 12px !important;
+  }
+
+  #SearchColis .paramsearch {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12) !important;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  #SearchColis .paramsearch span,
+  #SearchColis .paramsearch input {
+    margin: 8px 0px !important;
+  }
+
+  #SearchColis .w-50 {
+    width: 100% !important;
+  }
 }
 

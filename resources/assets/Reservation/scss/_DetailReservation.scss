@@ -1,0 +1,15 @@
+#DetailReservation{
+  font-size: 14px;
+  color:  $bluetext;
+  a{
+    color: $bluelink;
+    text-decoration: none;
+  }
+  .imagedesc{
+    height: 80px;
+    width: 80px;
+  }
+  .img-circle{
+    border-radius: 50%;
+  }
+}

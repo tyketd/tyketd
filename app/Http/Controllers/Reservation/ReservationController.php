@@ -12,4 +12,9 @@ class ReservationController extends Controller
 
         return view('reservation.index');
     }
+
+    public function detail ($id){
+
+        return view('reservation.detail');
+    }
 }

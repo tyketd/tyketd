@@ -1,1 +1,2 @@
 require("./reservation");
+require("./detailReservation");

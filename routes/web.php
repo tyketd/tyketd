@@ -29,6 +29,10 @@ Route::get('/locale/{locale}', 'Welcome\WelcomeController@locale')->name('locale
 
 //COLIS
 //route for create colis
-Route::get('/create','Colis\ColisController@create')->name("createcolis");
+Route::prefix('colis')->group(function () {
+    Route::get('/create','Colis\ColisController@create')->name("createcolis");
+    Route::get('/search','Colis\ColisController@search')->name("searchcolis");
+});
+
 //Route::resource('reservation', 'ReservationController');
 

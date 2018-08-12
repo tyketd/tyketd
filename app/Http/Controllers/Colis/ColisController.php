@@ -12,4 +12,9 @@ class ColisController extends Controller
 
         return view('colis.demandeColis');
     }
+
+    public function search (){
+
+        return view('colis.search');
+    }
 }

@@ -20848,3 +20848,17 @@ table.text-center th {
   }
 }
 
+#SearchColis {
+  background-color: #fff;
+}
+
+#SearchColis .imglist {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#SearchColis .blimg {
+  width: 200px;
+}
+

@@ -15555,6 +15555,7 @@ readers do not read off random characters that represent icons */
 
 .footer {
   background-color: #f5f8fa;
+  color: #054752;
 }
 
 .footer .flang {
@@ -15687,8 +15688,8 @@ readers do not read off random characters that represent icons */
 }
 
 .hidehelp {
-  -webkit-animation: mymove 5s;
-          animation: mymove 5s;
+  -webkit-animation: mymove 1s;
+          animation: mymove 1s;
   bottom: -133px !important;
 }
 
@@ -15714,6 +15715,10 @@ readers do not read off random characters that represent icons */
   to {
     bottom: -133px;
   }
+}
+
+#header .text-black {
+  color: #111 !important;
 }
 
 #header #navbarToggleExternalContent a {
@@ -15854,6 +15859,10 @@ readers do not read off random characters that represent icons */
   }
 }
 
+#reservation {
+  font-size: 14px;
+  color: #054752;
+}
 
 #reservation .linkcategorie a {
   text-decoration: none;
@@ -20778,6 +20787,64 @@ table.text-center th {
   .table-responsive > .table tr th,
   .table-responsive > .table tr td {
     white-space: normal !important;
+  }
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+#DemandeColis {
+  background-color: #fff;
+}
+
+#DemandeColis a {
+  text-decoration: none;
+  color: #000;
+}
+
+#DemandeColis a:hover {
+  color: #ffc100;
+}
+
+#DemandeColis .libelobj {
+  width: 147px;
+}
+
+#DemandeColis .btnaddremove {
+  width: 144px;
+}
+
+#DemandeColis #map {
+  width: 100%;
+  background-color: grey;
+}
+
+#DemandeColis .estimateprix {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #DemandeColis .w-75 {
+    width: 100% !important;
+  }
+
+  #DemandeColis .w-50 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #DemandeColis .w-75 {
+    width: 100% !important;
+  }
+
+  #DemandeColis .w-50 {
+    width: 100% !important;
+  }
+
+  #DemandeColis .btnaddremove {
+    width: 150px !important;
   }
 }
 

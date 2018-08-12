@@ -1,0 +1,37 @@
+#DemandeColis{
+  background-color: #fff;
+  a{
+    text-decoration: none;
+    color: #000;
+    &:hover{
+      color: $orangebg;
+    }
+  }
+  .libelobj{
+    width: 147px;
+  }
+  .btnaddremove{
+    width: 144px;
+  }
+  #map {
+    width: 100%;
+    background-color: grey;
+  }
+  .estimateprix{
+
+    display: none;
+  }
+  @media (max-width:767px)
+  {
+    .w-75{width:100%!important}
+    .w-50{width:100%!important}
+  }
+  @media (min-width:768px) and (max-width:991px)
+  {
+    .w-75{width:100%!important}
+    .w-50{width:100%!important}
+    .btnaddremove{
+      width: 150px!important;
+    }
+  }
+}

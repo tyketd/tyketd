@@ -15555,7 +15555,6 @@ readers do not read off random characters that represent icons */
 
 .footer {
   background-color: #f5f8fa;
-  color: #054752;
 }
 
 .footer .flang {
@@ -15688,8 +15687,8 @@ readers do not read off random characters that represent icons */
 }
 
 .hidehelp {
-  -webkit-animation: mymove 1s;
-          animation: mymove 1s;
+  -webkit-animation: mymove 5s;
+          animation: mymove 5s;
   bottom: -133px !important;
 }
 
@@ -15715,10 +15714,6 @@ readers do not read off random characters that represent icons */
   to {
     bottom: -133px;
   }
-}
-
-#header .text-black {
-  color: #111 !important;
 }
 
 #header #navbarToggleExternalContent a {
@@ -15859,10 +15854,6 @@ readers do not read off random characters that represent icons */
   }
 }
 
-#reservation {
-  font-size: 14px;
-  color: #054752;
-}
 
 #reservation .linkcategorie a {
   text-decoration: none;

@@ -13,9 +13,11 @@ yarn-error.log
 .env
 
 
-public/css/
+#public/css/
 
 package.json
 
+
+#public/js/app\.js
 
 public/js/app\.js

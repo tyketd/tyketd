@@ -14,4 +14,7 @@ class ProfilController extends Controller
     public function photoProfil (){
         return view('profil.photoProfil');
     }
+    public function verificationProfil (){
+        return view('profil.verificationProfil');
+    }
 }

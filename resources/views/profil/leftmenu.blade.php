@@ -7,7 +7,7 @@
             <a class="list-group-item {{ $activeLink === 'general' ? 'active': '' }}" href="{{ route('monprofil') }}">Informations Personnelles</a>
             <a class="list-group-item {{ $activeLink === 'Photo' ? 'active': '' }}" href="{{route('photoProfil')}}">Photo</a>
             <a class="list-group-item {{ $activeLink === 'Preferences' ? 'active': '' }}" href="">Preferences</a>
-            <a class="list-group-item {{ $activeLink === 'Verifications' ? 'active': '' }}" href="">Verifications</a>
+            <a class="list-group-item {{ $activeLink === 'Verifications' ? 'active': '' }}" href="{{route('verificationProfil')}}">Verifications</a>
             <a class="list-group-item {{ $activeLink === 'Adresse' ? 'active': '' }}" href="">Adresse postale</a>
         </div>
     </div>

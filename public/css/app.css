@@ -21136,3 +21136,19 @@ table.text-center th {
   font-size: 20px;
 }
 
+#verificationProfil {
+  background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#verificationProfil a {
+  text-decoration: none;
+  color: #00aff5;
+  font-size: 14px;
+}
+
+#verificationProfil .itemverifie i {
+  font-size: 36px;
+}
+

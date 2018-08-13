@@ -21179,3 +21179,15 @@ table.text-center th {
   border-radius: 50%;
 }
 
+#avisLaisse .imgavis {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+#avisLaisse .circlered {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+

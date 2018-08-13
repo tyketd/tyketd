@@ -23,4 +23,7 @@ class ProfilController extends Controller
     public function avisRecu (){
         return view('profil.avisRecu');
     }
+    public function avisLaisse (){
+        return view('profil.avisLaisse');
+    }
 }

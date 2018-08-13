@@ -15860,6 +15860,7 @@ readers do not read off random characters that represent icons */
 }
 
 #reservation {
+  background-color: #fff;
   font-size: 14px;
   color: #054752;
 }
@@ -15886,6 +15887,8 @@ readers do not read off random characters that represent icons */
 
 #reservation .reservationitem {
   color: #054752;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #reservation .reservationitem i {
@@ -15915,6 +15918,8 @@ readers do not read off random characters that represent icons */
 
   #reservation .reservationitem {
     background-color: #eee;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
     margin: 4px;
@@ -15933,6 +15938,12 @@ readers do not read off random characters that represent icons */
 #DetailReservation {
   font-size: 14px;
   color: #054752;
+  background-color: #fff;
+}
+
+#DetailReservation .block {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #DetailReservation a {
@@ -15947,6 +15958,39 @@ readers do not read off random characters that represent icons */
 
 #DetailReservation .img-circle {
   border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  #DetailReservation .block {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+#Dashboard {
+  background-color: #fff;
+}
+
+#headerdash a {
+  text-decoration: none;
+  color: #00aff5;
+  font-size: 14px;
+}
+
+#headerdash .top-menu {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+#headerdash .top-menu a:hover {
+  background: #fff !important;
+}
+
+#headerdash .nav-tabs .nav-link.active {
+  color: #495057;
+  height: 52px;
+  margin-top: -10px;
+  background-color: #fff;
 }
 
 /*!
@@ -17294,6 +17338,30 @@ a:focus {
   100% {
     -webkit-transform: perspective(400px);
             transform: perspective(400px);
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
   }
 }
 
@@ -20903,5 +20971,123 @@ table.text-center th {
   #SearchColis .w-50 {
     width: 100% !important;
   }
+}
+
+#alerte {
+  font-size: 14px;
+  color: #054752;
+}
+
+#alerte .circlealerte {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-top: 2px;
+  border: 2px solid #054752;
+}
+
+#Profil {
+  background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#Profil .sizetext {
+  width: 150px;
+  text-align: right;
+}
+
+#Profil .inputfirstpart {
+  width: 180px;
+}
+
+#Profil .inputsecondpart {
+  width: 367px;
+}
+
+#Profil input:not(select),
+#Profil select:not(select),
+#Profil textarea:not(select) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#Profil input:focus,
+#Profil select:focus,
+#Profil textarea:focus {
+  border-color: #3c8dbc !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#Profil input,
+#Profil select,
+#Profil textarea {
+  display: block;
+  font-size: 11px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+#Profil .descripbio {
+  width: 366px;
+  background-color: #daeada;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #Profil .sizetext {
+    text-align: left !important;
+    -webkit-box-pack: start !important;
+    margin-left: 10px;
+    -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+  }
+
+  #Profil .descripbio,
+  #Profil .inputsecondpart,
+  #Profil .inputfirstpart {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #Profil .sizetext {
+    text-align: left !important;
+    -webkit-box-pack: start !important;
+    margin-left: 10px;
+    -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+  }
+
+  #Profil .descripbio,
+  #Profil .inputsecondpart,
+  #Profil .inputfirstpart {
+    width: 100% !important;
+  }
+}
+
+#leftmenu .list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #f44336;
+  border-color: #f44336;
+}
+
+#leftmenu .list-group-item {
+  font-size: 14px;
+  color: #054752;
+  font-weight: 500;
+}
+
+#leftmenu .list-group-item:hover {
+  background-color: #eee;
 }
 

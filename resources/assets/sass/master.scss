@@ -9,7 +9,7 @@
 
 
 // Dashboard view
-@import "../Dashboard/scss/index";
+@import "../Dashboard/scss/app";
 
 
 // Register view
@@ -20,3 +20,9 @@
 
 // class colis
 @import "../Colis/scss/app";
+
+//Alerte
+@import "../alerte/scss/app";
+
+//Profil
+@import "../Profil/scss/app";

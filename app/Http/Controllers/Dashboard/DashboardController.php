@@ -30,7 +30,7 @@ class DashboardController extends Controller
      */
     public function __construct(AuthManager $auth, User $user)
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
         $this->auth = $auth;
         $this->user = $user;
     }
@@ -41,7 +41,7 @@ class DashboardController extends Controller
     public function index()
     {
         // every page must have a withPage attribute to make any menu link get active class on his page in the render Dashboard.menu
-        $user = $this->about();
+        $user = new User();
         return view('Dashboard.index', [
             'user' => $user
         ])->withPage('home');
@@ -55,7 +55,7 @@ class DashboardController extends Controller
         /*
          * add the select array to send more informations about the user to the view
          */
-        $user = $this->about();
+        $user = new User();
         return view('Dashboard.account', [
             'user' => $user
         ])->withPage('account');
@@ -75,7 +75,7 @@ class DashboardController extends Controller
     public function update(Request $request)
     {
 //        return redirect('/dashboard/account/general')->with('error', 'Fonctionnalite non disponible pour le moment');
-        return view('Dashboard.account')->with('error', 'Fonctionnalite non disponible pour le moment')->with('user', $this->about());
+        return view('Dashboard.account')->with('error', 'Fonctionnalite non disponible pour le moment')->with('user', new User());
     }
 
 

@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.app')
 
 @section('content')
     @include('Dashboard.header', ['page' => isset($page) ? $page : 'home'])
@@ -15,7 +15,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    Hello <strong>{{ $user->name  }}</strong>
+                                    Hello <strong>test</strong>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,11 @@
+#alerte{
+  font-size: 14px;
+  color:  $bluetext;
+  .circlealerte{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-top: 2px;
+    border: 2px solid $bluetext;
+  }
+}

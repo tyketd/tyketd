@@ -227,11 +227,15 @@
                                <i class="d-flex fa fa-envelope m-2"></i>
                                <span class="d-flex text-bold pt-1">Ne passez à côté d'aucune annonce !</span>
                            </div>
-                           <a  class="bg-white pl-3 pr-3 pt-1 pb-1 text-black" href="">Créer une alerte</a>
+                           {{--<a  class="bg-white pl-3 pr-3 pt-1 pb-1 text-black" href=""></a>--}}
+                           <button type="button" class="btn bg-white pl-3 pr-3 pt-1 pb-1 text-black" data-toggle="modal" data-target="#modalCreateAlerte">
+                               Créer une alerte
+                           </button>
                        </div>
                    </div>
                 </div>
             </div>
         </div>
     </div>
+    @include('alerte.create')
 @endsection

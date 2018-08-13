@@ -20905,3 +20905,16 @@ table.text-center th {
   }
 }
 
+#alerte {
+  font-size: 14px;
+  color: #054752;
+}
+
+#alerte .circlealerte {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-top: 2px;
+  border: 2px solid #054752;
+}
+

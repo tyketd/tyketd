@@ -17,4 +17,7 @@ class ProfilController extends Controller
     public function verificationProfil (){
         return view('profil.verificationProfil');
     }
+    public function adressePostale (){
+        return view('profil.adressePostale');
+    }
 }

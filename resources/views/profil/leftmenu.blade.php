@@ -8,7 +8,7 @@
             <a class="list-group-item {{ $activeLink === 'Photo' ? 'active': '' }}" href="{{route('photoProfil')}}">Photo</a>
             <a class="list-group-item {{ $activeLink === 'Preferences' ? 'active': '' }}" href="">Preferences</a>
             <a class="list-group-item {{ $activeLink === 'Verifications' ? 'active': '' }}" href="{{route('verificationProfil')}}">Verifications</a>
-            <a class="list-group-item {{ $activeLink === 'Adresse' ? 'active': '' }}" href="">Adresse postale</a>
+            <a class="list-group-item {{ $activeLink === 'Adresse' ? 'active': '' }}" href="{{route('adressePostale')}}">Adresse postale</a>
         </div>
     </div>
     <div class=" leftmenu mb-4">

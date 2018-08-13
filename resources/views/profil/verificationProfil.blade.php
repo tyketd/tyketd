@@ -12,8 +12,7 @@
                 </div>
                 <div class=" d-flex flex-column  mt-3 ">
                     <span class="d-flex text-bold">
-                        Ajouter une photo ! Cela rassurera les autres membres et vous trouverez plus facilement un covoiturage. Les
-                        photos permmettent aussi aux membres de se reconnaitre
+                        Faites vérifé votre profil pour devenir un membre de confiance de notre communauté. Vous trouverez plus facilement d'autres membres avec qui voyager !
                     </span>
                     <div class=" mb-3 d-flex  mt-3 flex-column">
                         <div class="border d-flex mb-3  flex-row p-2 itemverifie justify-content-between">

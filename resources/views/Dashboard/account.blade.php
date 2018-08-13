@@ -1,8 +1,8 @@
-@extends('layouts.dashboard')
+@extends('layouts.app')
 
 @section('content')
     @include('Dashboard.header', ['page' => isset($page) ? $page : 'home'])
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-2">
                 @include('Dashboard.leftmenu', ['activeLink' => isset($activeLink) ? $activeLink : 'general'])

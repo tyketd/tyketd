@@ -138,7 +138,7 @@
                     <span class="d-flex mt-3 text-bold">Description détaillé</span>
                     <textarea name="descrition" class="w-100" id="" cols="30" rows="3" placeholder="Merci de mattre plus de details sur votre demande notamment sur votre disponibilité"></textarea>
                     <div class="d-flex flex-column  mb-2 mt-2">
-                        <input type="button" class="btn-primary btn w-100 bg-yellow" value="Estimer le prix">
+                        <input type="button" class="btn-primary btn w-100 bg-yellow" value="Poster ma demande d'espédition">
                     </div>
                 </div>
             </div>

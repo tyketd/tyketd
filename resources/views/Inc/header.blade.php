@@ -7,7 +7,7 @@
                 @guest
                 <a class="d-flex text-white p-2 flex-row r" href="{{ route('login') }}"><span>{{ __('Login') }}</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href="{{ route('register') }}"><span>{{ __('Register') }}</span></a>
-                <a  class="d-flex text-white p-2 flex-row " href=""><span>Tableau de bord</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href="{{ route('dashboard') }}"><span>Tableau de bord</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Trajets publiés</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href="{{ route('reservation') }}"><span>Mes reservations</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Messages</span></a>
@@ -80,7 +80,7 @@
                         <a href="" class="btnopenmenu"><img src="{{asset('img/tof.jpg')}}" alt=""></a>
                         <span class="rednotificationnumber circlered">5</span>
                         <div class="detailmenu flex-column">
-                            <a href="#" class="d-flex p-2 ">Tableau de bord <span class="rednotif circlered">3</span></a>
+                            <a href="{{ route('dashboard') }}" class="d-flex p-2 ">Tableau de bord <span class="rednotif circlered">3</span></a>
                             <a href="" class="d-flex p-2">Trajets publiés</a>
                             <a href="{{ route('reservation') }}" class="d-flex p-2">Mes reservations</a>
                             <a href="" class="d-flex p-2">Messages</a>

@@ -1,6 +1,11 @@
 #DetailReservation{
   font-size: 14px;
   color:  $bluetext;
+  background-color: #fff;
+  .block{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   a{
     color: $bluelink;
     text-decoration: none;
@@ -11,5 +16,11 @@
   }
   .img-circle{
     border-radius: 50%;
+  }
+  @media (max-width:767px){
+    .block{
+      margin-left: 0px!important;
+      margin-right: 0px!important;
+    }
   }
 }

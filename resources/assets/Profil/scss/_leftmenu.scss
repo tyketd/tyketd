@@ -11,6 +11,8 @@
     font-weight: 500;
     &:hover{
       background-color: #eee;
+      color:  $bluetext;
+      border-color: #ccc;
     }
   }
 }

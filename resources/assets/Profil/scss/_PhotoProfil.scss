@@ -1,0 +1,38 @@
+#PhotoProfil{
+  background-color: #fff;
+  font-size: 14px;
+  color:  $bluetext;
+
+  a{
+    text-decoration: none;
+    color:  $bluelink;
+    font-size: 14px;
+  }
+  .imgtofvalide{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .info-btn{
+    border-radius: 5px;
+    background-color: #d6f2f8;
+
+    .fa-check-circle{
+      font-size: 20px;
+    }
+  }
+
+  .imgtofindik{
+    position: relative;
+    img{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+    i{
+      position: absolute;
+      left: 50px;
+      font-size: 20px;
+    }
+  }
+}

@@ -38,6 +38,11 @@ Route::prefix('colis')->group(function () {
 //PROFIL
 Route::prefix('profil')->group(function () {
     Route::get('/','Profil\ProfilController@index')->name("monprofil");
+    Route::get('/photo','Profil\ProfilController@photoProfil')->name("photoProfil");
+    Route::get('/verification','Profil\ProfilController@verificationProfil')->name("verificationProfil");
+    Route::get('/adressePostale','Profil\ProfilController@adressePostale')->name("adressePostale");
+    Route::get('/avisRecu','Profil\ProfilController@avisRecu')->name("avisRecu");
+    Route::get('/avisLaisse','Profil\ProfilController@avisLaisse')->name("avisLaisse");
 });
 
 

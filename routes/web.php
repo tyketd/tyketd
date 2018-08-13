@@ -41,6 +41,7 @@ Route::prefix('profil')->group(function () {
     Route::get('/photo','Profil\ProfilController@photoProfil')->name("photoProfil");
     Route::get('/verification','Profil\ProfilController@verificationProfil')->name("verificationProfil");
     Route::get('/adressePostale','Profil\ProfilController@adressePostale')->name("adressePostale");
+    Route::get('/avisRecu','Profil\ProfilController@avisRecu')->name("avisRecu");
 });
 
 

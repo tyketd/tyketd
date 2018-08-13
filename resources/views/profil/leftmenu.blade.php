@@ -16,7 +16,7 @@
             Avis
         </div>
         <div class="card-body p-0 list-group">
-            <a class="list-group-item {{ $activeLink === 'Avis-recus' ? 'active': '' }}" href="">Avis recus</a>
+            <a class="list-group-item {{ $activeLink === 'avisRecu' ? 'active': '' }}" href="{{route('avisRecu')}}">Avis recus</a>
             <a class="list-group-item {{ $activeLink === 'Avis-laisses' ? 'active': '' }}" href="">Avis laisses</a>
         </div>
     </div>

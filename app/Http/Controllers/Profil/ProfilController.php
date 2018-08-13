@@ -20,4 +20,7 @@ class ProfilController extends Controller
     public function adressePostale (){
         return view('profil.adressePostale');
     }
+    public function avisRecu (){
+        return view('profil.avisRecu');
+    }
 }

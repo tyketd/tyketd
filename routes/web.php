@@ -38,6 +38,7 @@ Route::prefix('colis')->group(function () {
 //PROFIL
 Route::prefix('profil')->group(function () {
     Route::get('/','Profil\ProfilController@index')->name("monprofil");
+    Route::get('/photo','Profil\ProfilController@photoProfil')->name("photoProfil");
 });
 
 

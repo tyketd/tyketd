@@ -21089,5 +21089,50 @@ table.text-center th {
 
 #leftmenu .list-group-item:hover {
   background-color: #eee;
+  color: #054752;
+  border-color: #ccc;
+}
+
+#PhotoProfil {
+  background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#PhotoProfil a {
+  text-decoration: none;
+  color: #00aff5;
+  font-size: 14px;
+}
+
+#PhotoProfil .imgtofvalide {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#PhotoProfil .info-btn {
+  border-radius: 5px;
+  background-color: #d6f2f8;
+}
+
+#PhotoProfil .info-btn .fa-check-circle {
+  font-size: 20px;
+}
+
+#PhotoProfil .imgtofindik {
+  position: relative;
+}
+
+#PhotoProfil .imgtofindik img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#PhotoProfil .imgtofindik i {
+  position: absolute;
+  left: 50px;
+  font-size: 20px;
 }
 

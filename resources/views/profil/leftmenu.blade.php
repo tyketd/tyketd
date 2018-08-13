@@ -5,7 +5,7 @@
         </div>
         <div class="card-body  p-0 list-group">
             <a class="list-group-item {{ $activeLink === 'general' ? 'active': '' }}" href="{{ route('monprofil') }}">Informations Personnelles</a>
-            <a class="list-group-item {{ $activeLink === 'Photo' ? 'active': '' }}" href="">Photo</a>
+            <a class="list-group-item {{ $activeLink === 'Photo' ? 'active': '' }}" href="{{route('photoProfil')}}">Photo</a>
             <a class="list-group-item {{ $activeLink === 'Preferences' ? 'active': '' }}" href="">Preferences</a>
             <a class="list-group-item {{ $activeLink === 'Verifications' ? 'active': '' }}" href="">Verifications</a>
             <a class="list-group-item {{ $activeLink === 'Adresse' ? 'active': '' }}" href="">Adresse postale</a>

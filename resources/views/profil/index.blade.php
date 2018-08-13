@@ -1,7 +1,7 @@
 @extends('layouts.profilLayout')
 
 @section('contentprofil')
-    <div class="row" id="Profil">
+    <div class="row" id="Profil" data-page="Profil">
         <div class="order-1 order-sm-0 order-md-0 order-lg-0 order-xl-0  col-12 col-xs-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
             @include('profil.leftmenu', ['activeLink' => isset($activeLink) ? $activeLink : 'general'])
         </div>

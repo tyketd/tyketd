@@ -9,7 +9,9 @@ class ProfilController extends Controller
 {
     //
     public function index (){
-
         return view('profil.index');
+    }
+    public function photoProfil (){
+        return view('profil.photoProfil');
     }
 }

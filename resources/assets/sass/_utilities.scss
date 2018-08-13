@@ -1231,6 +1231,13 @@ a:hover, a:active, a:focus {
   }
 }
 
+@media (max-width:767px){.hidden-xs{display:none!important}}
+@media (min-width:768px) and (max-width:991px)
+{.hidden-sm{display:none!important}}
+@media (min-width:992px) and (max-width:1199px)
+{.hidden-md{display:none!important}}
+@media (min-width:1200px){.hidden-lg{display:none!important}}
+
 @-webkit-keyframes flipInX {
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);

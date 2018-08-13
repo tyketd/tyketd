@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                @include('Dashboard.leftmenu', ['activeLink' => isset($activeLink) ? $activeLink : 'general'])
+                @include('profil.leftmenu', ['activeLink' => isset($activeLink) ? $activeLink : 'general'])
             </div>
             <div class="col-md-10">
                 <div class="container">

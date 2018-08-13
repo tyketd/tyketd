@@ -12,7 +12,7 @@
                 <a  class="d-flex text-white p-2 flex-row " href="{{ route('reservation') }}"><span>Mes reservations</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Messages</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Alertes</span></a>
-                <a  class="d-flex text-white p-2 flex-row " href=""><span>Profil</span></a>
+                <a  class="d-flex text-white p-2 flex-row " href="{{ route('monprofil') }}"><span>Profil</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Virements en attente</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href=""><span>Payements effectués</span></a>
                 <a  class="d-flex text-white p-2 flex-row " href="{{route('createcolis')}}"><span>Demande de transport colis</span></a>
@@ -85,7 +85,7 @@
                             <a href="{{ route('reservation') }}" class="d-flex p-2">Mes reservations</a>
                             <a href="" class="d-flex p-2">Messages</a>
                             <a href="" class="d-flex p-2">Alertes <span class="rednotif circlered">2</span></a>
-                            <a href="" class="d-flex p-2">Profil</a>
+                            <a href="{{ route('monprofil') }}" class="d-flex p-2">Profil</a>
                             <a href="" class="d-flex p-2">Virements en attente</a>
                             <a href="" class="d-flex p-2">Payements effectués</a>
                             <a href="{{route('createcolis')}}" class="d-flex p-2">Demande de transport colis</a>

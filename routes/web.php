@@ -34,5 +34,12 @@ Route::prefix('colis')->group(function () {
     Route::get('/search','Colis\ColisController@search')->name("searchcolis");
 });
 
+
+//PROFIL
+Route::prefix('profil')->group(function () {
+    Route::get('/','Profil\ProfilController@index')->name("monprofil");
+});
+
+
 //Route::resource('reservation', 'ReservationController');
 

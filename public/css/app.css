@@ -17341,6 +17341,30 @@ a:focus {
   }
 }
 
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
 @-webkit-keyframes flipInX {
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -20960,5 +20984,26 @@ table.text-center th {
   border-radius: 50%;
   margin-top: 2px;
   border: 2px solid #054752;
+}
+
+#Profil {
+  background-color: #fff;
+}
+
+#leftmenu .list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #f44336;
+  border-color: #f44336;
+}
+
+#leftmenu .list-group-item {
+  font-size: 14px;
+  color: #054752;
+  font-weight: 500;
+}
+
+#leftmenu .list-group-item:hover {
+  background-color: #eee;
 }
 

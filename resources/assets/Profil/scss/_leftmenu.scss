@@ -1,0 +1,16 @@
+#leftmenu{
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #f44336;
+    border-color: #f44336;
+  }
+  .list-group-item{
+    font-size: 14px;
+    color:  $bluetext;
+    font-weight: 500;
+    &:hover{
+      background-color: #eee;
+    }
+  }
+}

@@ -20988,6 +20988,90 @@ table.text-center th {
 
 #Profil {
   background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#Profil .sizetext {
+  width: 150px;
+  text-align: right;
+}
+
+#Profil .inputfirstpart {
+  width: 180px;
+}
+
+#Profil .inputsecondpart {
+  width: 367px;
+}
+
+#Profil input:not(select),
+#Profil select:not(select),
+#Profil textarea:not(select) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#Profil input:focus,
+#Profil select:focus,
+#Profil textarea:focus {
+  border-color: #3c8dbc !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#Profil input,
+#Profil select,
+#Profil textarea {
+  display: block;
+  font-size: 11px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+#Profil .descripbio {
+  width: 366px;
+  background-color: #daeada;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #Profil .sizetext {
+    text-align: left !important;
+    -webkit-box-pack: start !important;
+    margin-left: 10px;
+    -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+  }
+
+  #Profil .descripbio,
+  #Profil .inputsecondpart,
+  #Profil .inputfirstpart {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #Profil .sizetext {
+    text-align: left !important;
+    -webkit-box-pack: start !important;
+    margin-left: 10px;
+    -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+  }
+
+  #Profil .descripbio,
+  #Profil .inputsecondpart,
+  #Profil .inputfirstpart {
+    width: 100% !important;
+  }
 }
 
 #leftmenu .list-group-item.active {

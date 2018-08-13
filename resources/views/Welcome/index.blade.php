@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row wel-body-part1 pt-5 pt-sm-1">
                     <div class="col-md-12 col-lg hide-mobile">
-                        <img src="{{asset('img/tr1.png')}}" alt="">
+                        <img src="{{asset('img/tr1.PNG')}}" alt="">
                     </div>
                     <div class="col-md-12 col-lg d-flex flex-column wel-body-part1-desc">
                     <span class="d-flex p-2 desc">
@@ -43,7 +43,7 @@
                 </div>
                 <div class="row wel-body-part2 pt-5">
                     <div class="col-md-6 col-lg-4 col-sm-12 flex-column">
-                        <img src="{{asset('img/pr21.png')}}" alt="" class="d-lex">
+                        <img src="{{asset('img/pr21.PNG')}}" alt="" class="d-lex">
                         <span class="title d-flex p-2">Nouveau! Partager d'ou vous êtes</span>
                     <span class="d-flex pl-2 pr-2 pt-2 pb-0 hide-mobile  descrip">
                         Votre trajet commence la ou il ya une route
@@ -51,7 +51,7 @@
                         <a class="d-flex pl-2 pb-2 pt-0" href="#">En savoir plus</a>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 flex-column">
-                        <img src="{{asset('img/pr22.png')}}" alt="" class="d-lex">
+                        <img src="{{asset('img/pr22.PNG')}}" alt="" class="d-lex">
                         <span class="title d-flex p-2">Nouveau! Plus de passagers sur votre route</span>
                     <span class="d-flex pl-2 pr-2 pt-2 pb-0 hide-mobile  descrip">
                         Desormais, votre trajet sera visible par la plus part des passagers
@@ -59,7 +59,7 @@
                         <a class="d-flex pl-2 pb-2 pt-0" href="#">En savoir plus</a>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 flex-column">
-                        <img src="{{asset('img/pr23.png')}}" alt="" class="d-lex">
+                        <img src="{{asset('img/pr23.PNG')}}" alt="" class="d-lex">
                         <span class="title d-flex p-2">Nouveau! Bon plan exclusivement pour vous: passez a l'électricité verte et moins cher avec Total spring</span>
                     <span class="d-flex pl-2 pr-2 pt-2 pb-0 hide-mobile  descrip">
                        Blablacar vous propose de benéficier d'une remise de 10% sur les prix HT

@@ -18,10 +18,10 @@
                     <span class="d-flex"> Langue </span>  <span class="d-flex description">Français (Belgique)</span>
                 </div>
                 <div class="d-flex flex-row p-2">
-                    <img src="{{asset('img/facebook.png')}}" alt="" class="d-flex p-2">
-                    <img src="{{asset('img/twitter.png')}}" alt="" class="d-flex p-2">
-                    <img src="{{asset('img/insta.png')}}" alt="" class="d-flex p-2">
-                    <img src="{{asset('img/youtube.png')}}" alt="" class="d-flex p-2">
+                    <img src="{{asset('img/facebook.PNG')}}" alt="" class="d-flex p-2">
+                    <img src="{{asset('img/twitter.PNG')}}" alt="" class="d-flex p-2">
+                    <img src="{{asset('img/insta.PNG')}}" alt="" class="d-flex p-2">
+                    <img src="{{asset('img/youtube.PNG')}}" alt="" class="d-flex p-2">
                 </div>
             </div>
         </div>

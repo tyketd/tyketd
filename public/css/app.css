@@ -20927,6 +20927,30 @@ table.text-center th {
   width: 30% !important;
 }
 
+@media (max-width: 767px) {
+  .show-xs {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .show-sm {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .show-md {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .show-lg {
+    display: block !important;
+  }
+}
+
 #DemandeColis {
   background-color: #fff;
 }

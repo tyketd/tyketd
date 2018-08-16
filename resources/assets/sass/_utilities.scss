@@ -1298,7 +1298,9 @@ a:hover, a:active, a:focus {
   border-color: #3c8dbc !important;
   box-shadow: none
 }
-
+.text-small {
+  font-size: 12px !important;
+}
 .form-control::-moz-placeholder {
   color: #bbb;
   opacity: 1

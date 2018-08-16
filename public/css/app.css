@@ -15993,6 +15993,67 @@ readers do not read off random characters that represent icons */
   background-color: #fff;
 }
 
+#auth {
+  background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#auth .card {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+#auth a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #00aff5;
+  font-size: 14px;
+}
+
+#auth input:not(select),
+#auth select:not(select),
+#auth textarea:not(select) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#auth input:focus,
+#auth select:focus,
+#auth textarea:focus {
+  border-color: #3c8dbc !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#auth input,
+#auth select,
+#auth textarea {
+  display: block;
+  font-size: 11px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+#auth img {
+  width: 200px;
+  height: 160px;
+}
+
+#auth .separate {
+  height: 2px;
+  margin-top: 8px;
+  width: 40%;
+}
+
 /*!
 
 !*/
@@ -17430,6 +17491,10 @@ a:focus {
   border-color: #3c8dbc !important;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.text-small {
+  font-size: 12px !important;
 }
 
 .form-control::-moz-placeholder {

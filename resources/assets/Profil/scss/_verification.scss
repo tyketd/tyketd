@@ -3,6 +3,9 @@
   font-size: 14px;
   color:  $bluetext;
 
+  .contentverifie{
+    position: relative;
+  }
   a{
     text-decoration: none;
     color:  $bluelink;
@@ -13,4 +16,92 @@
       font-size: 36px;
     }
   }
+
+  #step1{
+    position: absolute;
+    display: none;
+    .imgtofvalide{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+    .blimg{
+      position: relative;
+      span{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        font-size: 18px;
+      }
+    }
+  }
+  .blback{
+    position: absolute;
+    i{
+      font-size: 14px!important;
+    }
+    top: 8px;
+    left: 12px;
+  }
+
+  #step2{
+    display: none;
+    .border{
+      position: relative;
+      i{
+        font-size: 62px;
+      }
+    }
+  }
+
+  #step3{
+    display: none;
+    .border{
+      position: relative;
+      i{
+        font-size: 62px;
+      }
+    }
+  }
+
+  #step4{
+    display: none;
+    .border{
+      position: relative;
+
+    }
+  }
+
+  #step5{
+    display: none;
+    .border{
+      position: relative;
+      i{
+        font-size: 32px;
+      }
+      img{
+        height: 100px;
+      }
+    }
+  }
+  #step6{
+    display: none;
+    .border{
+      position: relative;
+      .fa-cloud-download-alt{
+        font-size: 42px;
+      }
+      .info-btn{
+        border-radius: 5px;
+        background-color: #d6f2f8;
+
+        .fa-check-circle{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @media (max-width:767px){.w-75, .w-25{width:100%!important}}
+  @media (min-width:768px) and (max-width:991px)
+  {.w-75, .w-25{width:100%!important}}
 }

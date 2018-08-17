@@ -21231,6 +21231,10 @@ table.text-center th {
   color: #054752;
 }
 
+#verificationProfil .contentverifie {
+  position: relative;
+}
+
 #verificationProfil a {
   text-decoration: none;
   color: #00aff5;
@@ -21239,6 +21243,121 @@ table.text-center th {
 
 #verificationProfil .itemverifie i {
   font-size: 36px;
+}
+
+#verificationProfil #step1 {
+  position: absolute;
+  display: none;
+}
+
+#verificationProfil #step1 .imgtofvalide {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#verificationProfil #step1 .blimg {
+  position: relative;
+}
+
+#verificationProfil #step1 .blimg span {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+
+#verificationProfil .blback {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+#verificationProfil .blback i {
+  font-size: 14px !important;
+}
+
+#verificationProfil #step2 {
+  display: none;
+}
+
+#verificationProfil #step2 .border {
+  position: relative;
+}
+
+#verificationProfil #step2 .border i {
+  font-size: 62px;
+}
+
+#verificationProfil #step3 {
+  display: none;
+}
+
+#verificationProfil #step3 .border {
+  position: relative;
+}
+
+#verificationProfil #step3 .border i {
+  font-size: 62px;
+}
+
+#verificationProfil #step4 {
+  display: none;
+}
+
+#verificationProfil #step4 .border {
+  position: relative;
+}
+
+#verificationProfil #step5 {
+  display: none;
+}
+
+#verificationProfil #step5 .border {
+  position: relative;
+}
+
+#verificationProfil #step5 .border i {
+  font-size: 32px;
+}
+
+#verificationProfil #step5 .border img {
+  height: 100px;
+}
+
+#verificationProfil #step6 {
+  display: none;
+}
+
+#verificationProfil #step6 .border {
+  position: relative;
+}
+
+#verificationProfil #step6 .border .fa-cloud-download-alt {
+  font-size: 42px;
+}
+
+#verificationProfil #step6 .border .info-btn {
+  border-radius: 5px;
+  background-color: #d6f2f8;
+}
+
+#verificationProfil #step6 .border .info-btn .fa-check-circle {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  #verificationProfil .w-75,
+  #verificationProfil .w-25 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #verificationProfil .w-75,
+  #verificationProfil .w-25 {
+    width: 100% !important;
+  }
 }
 
 #adressePostal .confaddre {

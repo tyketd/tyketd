@@ -1298,7 +1298,9 @@ a:hover, a:active, a:focus {
   border-color: #3c8dbc !important;
   box-shadow: none
 }
-
+.text-small {
+  font-size: 12px !important;
+}
 .form-control::-moz-placeholder {
   color: #bbb;
   opacity: 1
@@ -4417,3 +4419,12 @@ table.text-center, table.text-center td, table.text-center th {
 .w-30 {
   width: 30% !important;
 }
+
+@media (max-width:767px){
+  .show-xs{display:block!important}
+}
+@media (min-width:768px) and (max-width:991px)
+{.show-sm{display:block!important}}
+@media (min-width:992px) and (max-width:1199px)
+{.show-md{display:block!important}}
+@media (min-width:1200px){.show-lg{display:block!important}}

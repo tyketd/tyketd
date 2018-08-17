@@ -15993,6 +15993,67 @@ readers do not read off random characters that represent icons */
   background-color: #fff;
 }
 
+#auth {
+  background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#auth .card {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+#auth a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #00aff5;
+  font-size: 14px;
+}
+
+#auth input:not(select),
+#auth select:not(select),
+#auth textarea:not(select) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#auth input:focus,
+#auth select:focus,
+#auth textarea:focus {
+  border-color: #3c8dbc !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#auth input,
+#auth select,
+#auth textarea {
+  display: block;
+  font-size: 11px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+#auth img {
+  width: 200px;
+  height: 160px;
+}
+
+#auth .separate {
+  height: 2px;
+  margin-top: 8px;
+  width: 40%;
+}
+
 /*!
 
 !*/
@@ -17430,6 +17491,10 @@ a:focus {
   border-color: #3c8dbc !important;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.text-small {
+  font-size: 12px !important;
 }
 
 .form-control::-moz-placeholder {
@@ -20862,6 +20927,30 @@ table.text-center th {
   width: 30% !important;
 }
 
+@media (max-width: 767px) {
+  .show-xs {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .show-sm {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .show-md {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .show-lg {
+    display: block !important;
+  }
+}
+
 #DemandeColis {
   background-color: #fff;
 }
@@ -21142,6 +21231,10 @@ table.text-center th {
   color: #054752;
 }
 
+#verificationProfil .contentverifie {
+  position: relative;
+}
+
 #verificationProfil a {
   text-decoration: none;
   color: #00aff5;
@@ -21150,6 +21243,121 @@ table.text-center th {
 
 #verificationProfil .itemverifie i {
   font-size: 36px;
+}
+
+#verificationProfil #step1 {
+  position: absolute;
+  display: none;
+}
+
+#verificationProfil #step1 .imgtofvalide {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#verificationProfil #step1 .blimg {
+  position: relative;
+}
+
+#verificationProfil #step1 .blimg span {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+
+#verificationProfil .blback {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+#verificationProfil .blback i {
+  font-size: 14px !important;
+}
+
+#verificationProfil #step2 {
+  display: none;
+}
+
+#verificationProfil #step2 .border {
+  position: relative;
+}
+
+#verificationProfil #step2 .border i {
+  font-size: 62px;
+}
+
+#verificationProfil #step3 {
+  display: none;
+}
+
+#verificationProfil #step3 .border {
+  position: relative;
+}
+
+#verificationProfil #step3 .border i {
+  font-size: 62px;
+}
+
+#verificationProfil #step4 {
+  display: none;
+}
+
+#verificationProfil #step4 .border {
+  position: relative;
+}
+
+#verificationProfil #step5 {
+  display: none;
+}
+
+#verificationProfil #step5 .border {
+  position: relative;
+}
+
+#verificationProfil #step5 .border i {
+  font-size: 32px;
+}
+
+#verificationProfil #step5 .border img {
+  height: 100px;
+}
+
+#verificationProfil #step6 {
+  display: none;
+}
+
+#verificationProfil #step6 .border {
+  position: relative;
+}
+
+#verificationProfil #step6 .border .fa-cloud-download-alt {
+  font-size: 42px;
+}
+
+#verificationProfil #step6 .border .info-btn {
+  border-radius: 5px;
+  background-color: #d6f2f8;
+}
+
+#verificationProfil #step6 .border .info-btn .fa-check-circle {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  #verificationProfil .w-75,
+  #verificationProfil .w-25 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #verificationProfil .w-75,
+  #verificationProfil .w-25 {
+    width: 100% !important;
+  }
 }
 
 #adressePostal .confaddre {

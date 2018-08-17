@@ -2,10 +2,10 @@
 
 @section('contentprofil')
     <div class="row" id="Profil" data-page="Profil">
-        <div class="order-1 order-sm-0 order-md-0 order-lg-0 order-xl-0  col-12 col-xs-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
+        <div class="  col-12 col-xs-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
             @include('profil.leftmenu', ['activeLink' => isset($activeLink) ? $activeLink : 'general'])
         </div>
-        <div class="order-0 order-sm-1 order-md-1 mb-4 order-lg-1 order-xl-1 col-12 col-xs-12 col-sm-12 col-md-8 col-xl-9 col-lg-9">
+        <div class=" mb-4 col-12 col-xs-12 col-sm-12 col-md-8 col-xl-9 col-lg-9">
             <div class="pl-3 d-flex flex-column">
                 <div class="d-flex pb-1 border-bottom">
                     <h4>Informations personnelles</h4>

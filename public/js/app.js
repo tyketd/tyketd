@@ -95,7 +95,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(24);
+module.exports = __webpack_require__(26);
 
 
 /***/ }),
@@ -120,7 +120,7 @@ require("./master");
 */
 __webpack_require__(3);
 
-window.Vue = __webpack_require__(16);
+window.Vue = __webpack_require__(18);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -128,7 +128,7 @@ window.Vue = __webpack_require__(16);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(20));
+Vue.component('example-component', __webpack_require__(22));
 
 //const app = new Vue({
 //    el: '#app'
@@ -143,7 +143,8 @@ __webpack_require__(6);
 __webpack_require__(9);
 __webpack_require__(11);
 __webpack_require__(14);
-__webpack_require__(29);
+__webpack_require__(16);
+__webpack_require__(31);
 
 /***/ }),
 /* 4 */
@@ -404,6 +405,127 @@ $(function () {
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Created by mkwen on 16/08/2018.
+ */
+
+__webpack_require__(17);
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Created by mkwen on 16/08/2018.
+ */
+
+$(function () {
+    var VerificationClass = function VerificationClass() {
+        _classCallCheck(this, VerificationClass);
+
+        this.Id = $("#verificationProfil");
+        // on recupere les parametres
+        this.params = {
+            btnopenstep1: $("#verificationProfil #btnopenstep1"),
+            step0: $("#verificationProfil #step0"),
+            //step1 : $("#verificationProfil #step1"),
+            step1: $("#verificationProfil #step1"),
+            step2: $("#verificationProfil #step2"),
+            step3: $("#verificationProfil #step3"),
+            step4: $("#verificationProfil #step4"),
+            step5: $("#verificationProfil #step5"),
+            step6: $("#verificationProfil #step6"),
+            btnopenstep2: $("#verificationProfil .btnopenstep2"),
+            btnbacksetp1: $("#verificationProfil #btnbacksetp1"),
+            btnopenstep3: $("#verificationProfil .btnopenstep3"),
+            btnbacksetp2: $("#verificationProfil #btnbacksetp2"),
+            btnopenstep4: $("#verificationProfil .btnopenstep4"),
+            btnbacksetp3: $("#verificationProfil #btnbacksetp3"),
+            btnopenstep5: $("#verificationProfil .btnopenstep5"),
+            btnbacksetp4: $("#verificationProfil #btnbacksetp4"),
+            btnopenstep6: $("#verificationProfil .btnopenstep6"),
+            btnbacksetp5: $("#verificationProfil #btnbacksetp5")
+        };
+    };
+
+    var MyVerificationClass = new VerificationClass();
+
+    if (MyVerificationClass.Id.data("page") === "verificationProfil") {
+
+        MyVerificationClass.params.btnopenstep1.click(function (e) {
+            MyVerificationClass.params.step1.fadeIn();
+            MyVerificationClass.params.step0.fadeOut();
+            e.preventDefault();
+        });
+
+        //STEP 2
+        MyVerificationClass.params.btnopenstep2.click(function (e) {
+            MyVerificationClass.params.step2.fadeIn();
+            MyVerificationClass.params.step1.fadeOut();
+            e.preventDefault();
+        });
+        MyVerificationClass.params.btnbacksetp1.click(function (e) {
+            MyVerificationClass.params.step0.fadeIn();
+            MyVerificationClass.params.step2.fadeOut();
+            e.preventDefault();
+        });
+
+        //STEP 3
+        MyVerificationClass.params.btnopenstep3.click(function (e) {
+            MyVerificationClass.params.step3.fadeIn();
+            MyVerificationClass.params.step2.fadeOut();
+            e.preventDefault();
+        });
+        MyVerificationClass.params.btnbacksetp2.click(function (e) {
+            MyVerificationClass.params.step2.fadeIn();
+            MyVerificationClass.params.step3.fadeOut();
+            e.preventDefault();
+        });
+
+        //STEP 4
+        MyVerificationClass.params.btnopenstep4.click(function (e) {
+            MyVerificationClass.params.step4.fadeIn();
+            MyVerificationClass.params.step3.fadeOut();
+            e.preventDefault();
+        });
+        MyVerificationClass.params.btnbacksetp3.click(function (e) {
+            MyVerificationClass.params.step3.fadeIn();
+            MyVerificationClass.params.step4.fadeOut();
+            e.preventDefault();
+        });
+
+        //STEP 5
+        MyVerificationClass.params.btnopenstep5.click(function (e) {
+            MyVerificationClass.params.step5.fadeIn();
+            MyVerificationClass.params.step4.fadeOut();
+            e.preventDefault();
+        });
+        MyVerificationClass.params.btnbacksetp4.click(function (e) {
+            MyVerificationClass.params.step4.fadeIn();
+            MyVerificationClass.params.step5.fadeOut();
+            e.preventDefault();
+        });
+
+        //STEP 6
+        MyVerificationClass.params.btnopenstep6.click(function (e) {
+            MyVerificationClass.params.step6.fadeIn();
+            MyVerificationClass.params.step5.fadeOut();
+            e.preventDefault();
+        });
+        MyVerificationClass.params.btnbacksetp5.click(function (e) {
+            MyVerificationClass.params.step5.fadeIn();
+            MyVerificationClass.params.step6.fadeOut();
+            e.preventDefault();
+        });
+    }
+});
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11366,10 +11488,10 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(17).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(19).setImmediate))
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -11425,7 +11547,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(18);
+__webpack_require__(20);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -11439,7 +11561,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -11629,10 +11751,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(19)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(21)))
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -11822,15 +11944,15 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(21)
+var normalizeComponent = __webpack_require__(23)
 /* script */
-var __vue_script__ = __webpack_require__(22)
+var __vue_script__ = __webpack_require__(24)
 /* template */
-var __vue_template__ = __webpack_require__(23)
+var __vue_template__ = __webpack_require__(25)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11869,7 +11991,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -11978,7 +12100,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12007,7 +12129,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12050,132 +12172,70 @@ if (false) {
 }
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 25 */,
-/* 26 */,
 /* 27 */,
 /* 28 */,
-/* 29 */
+/* 29 */,
+/* 30 */,
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
- * Created by mkwen on 16/08/2018.
+ * Created by mkwen on 20/08/2018.
  */
-
-__webpack_require__(30);
+__webpack_require__(32);
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, exports) {
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /**
- * Created by mkwen on 16/08/2018.
+ * Created by mkwen on 20/08/2018.
+ */
+/**
+ * Created by mkwen on 12/08/2018.
  */
 
 $(function () {
-    var VerificationClass = function VerificationClass() {
-        _classCallCheck(this, VerificationClass);
+    var PublierAnnonceClass = function PublierAnnonceClass() {
+        _classCallCheck(this, PublierAnnonceClass);
 
-        this.Id = $("#verificationProfil");
-        // on recupere les parametres
-        this.params = {
-            btnopenstep1: $("#verificationProfil #btnopenstep1"),
-            step0: $("#verificationProfil #step0"),
-            //step1 : $("#verificationProfil #step1"),
-            step1: $("#verificationProfil #step1"),
-            step2: $("#verificationProfil #step2"),
-            step3: $("#verificationProfil #step3"),
-            step4: $("#verificationProfil #step4"),
-            step5: $("#verificationProfil #step5"),
-            step6: $("#verificationProfil #step6"),
-            btnopenstep2: $("#verificationProfil .btnopenstep2"),
-            btnbacksetp1: $("#verificationProfil #btnbacksetp1"),
-            btnopenstep3: $("#verificationProfil .btnopenstep3"),
-            btnbacksetp2: $("#verificationProfil #btnbacksetp2"),
-            btnopenstep4: $("#verificationProfil .btnopenstep4"),
-            btnbacksetp3: $("#verificationProfil #btnbacksetp3"),
-            btnopenstep5: $("#verificationProfil .btnopenstep5"),
-            btnbacksetp4: $("#verificationProfil #btnbacksetp4"),
-            btnopenstep6: $("#verificationProfil .btnopenstep6"),
-            btnbacksetp5: $("#verificationProfil #btnbacksetp5")
+        this.Id = $("#PublierAnnonce");
+        // on recupere le bouton pour capturer laction
+        this.param = {
+            blockTrain: $("#PublierAnnonce #blockTrain"),
+            CbbMoyen: $("#PublierAnnonce #CbbMoyen"),
+            blockVoiture: $("#PublierAnnonce #blockVoiture")
         };
     };
 
-    var MyVerificationClass = new VerificationClass();
+    var MyPublierAnnonceClass = new PublierAnnonceClass();
 
-    if (MyVerificationClass.Id.data("page") === "verificationProfil") {
+    if (MyPublierAnnonceClass.Id.data("page") === "PublierAnnonce") {
+        //console.log("publier");
 
-        MyVerificationClass.params.btnopenstep1.click(function (e) {
-            MyVerificationClass.params.step1.fadeIn();
-            MyVerificationClass.params.step0.fadeOut();
-            e.preventDefault();
-        });
+        MyPublierAnnonceClass.param.CbbMoyen.change(function () {
+            var val = MyPublierAnnonceClass.param.CbbMoyen.val();
+            if (val == "Train") {
+                console.log(val);
+                MyPublierAnnonceClass.param.blockTrain.fadeIn();
+                MyPublierAnnonceClass.param.blockVoiture.fadeOut();
+            } else if (val == "Voiture") {
+                MyPublierAnnonceClass.param.blockVoiture.fadeIn();
+                MyPublierAnnonceClass.param.blockTrain.fadeOut();
+            } else {
+                MyPublierAnnonceClass.param.blockTrain.fadeOut();
+                MyPublierAnnonceClass.param.blockVoiture.fadeOut();
+            }
 
-        //STEP 2
-        MyVerificationClass.params.btnopenstep2.click(function (e) {
-            MyVerificationClass.params.step2.fadeIn();
-            MyVerificationClass.params.step1.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp1.click(function (e) {
-            MyVerificationClass.params.step0.fadeIn();
-            MyVerificationClass.params.step2.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 3
-        MyVerificationClass.params.btnopenstep3.click(function (e) {
-            MyVerificationClass.params.step3.fadeIn();
-            MyVerificationClass.params.step2.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp2.click(function (e) {
-            MyVerificationClass.params.step2.fadeIn();
-            MyVerificationClass.params.step3.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 4
-        MyVerificationClass.params.btnopenstep4.click(function (e) {
-            MyVerificationClass.params.step4.fadeIn();
-            MyVerificationClass.params.step3.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp3.click(function (e) {
-            MyVerificationClass.params.step3.fadeIn();
-            MyVerificationClass.params.step4.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 5
-        MyVerificationClass.params.btnopenstep5.click(function (e) {
-            MyVerificationClass.params.step5.fadeIn();
-            MyVerificationClass.params.step4.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp4.click(function (e) {
-            MyVerificationClass.params.step4.fadeIn();
-            MyVerificationClass.params.step5.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 6
-        MyVerificationClass.params.btnopenstep6.click(function (e) {
-            MyVerificationClass.params.step6.fadeIn();
-            MyVerificationClass.params.step5.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp5.click(function (e) {
-            MyVerificationClass.params.step5.fadeIn();
-            MyVerificationClass.params.step6.fadeOut();
-            e.preventDefault();
+            //
         });
     }
 });

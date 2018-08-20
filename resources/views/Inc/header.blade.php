@@ -52,7 +52,7 @@
                             <img height="64" src="{{asset('img/flagfr.png')}}" alt="">
                         </div>
                         <div class="d-flex"><button type="button" class="btn btn-outline-primary">Trouver un voyageur</button></div>
-                        <div class="d-flex"><button class="btn btn-primary" type="submit">Publier un trajet</button></div>
+                        <div class="d-flex"><a href="{{route('publierannonce')}}" class="btn btn-primary" type="submit">Publier un trajet</a></div>
                     </div>
                 </div>
             </div>

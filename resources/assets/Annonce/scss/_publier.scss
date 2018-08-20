@@ -1,0 +1,60 @@
+#PublierAnnonce{
+
+  background-color: #fff;
+  font-size: 14px;
+  color:  $bluetext;
+  a{
+    text-decoration: none;
+    color:  $bluelink;
+    font-size: 14px;
+  }
+  .stepper{
+    .stepItem{
+      position: relative;
+      .divider{
+        width: 100px;
+        height: 1px;
+        background-color: $bluelink;
+      }
+      .number{
+        margin-top: -7px;
+        padding-left: 4px;
+      }
+      .textd{
+        font-size: 12px;
+        position: absolute;
+        right: -37px;
+        top: -8px;
+      }
+    }
+  }
+  .activestep{
+    background-color: $bluelink;
+    color: #fff;
+  }
+  .number{
+    border: 1px solid #00aff5;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    line-height: 14px;
+    padding-left: 3px;
+
+    font-size: 12px;
+  }
+  .desc{
+    font-size: 12px;
+  }
+  .numberchance{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    font-size: 36px;
+  }
+  .close{
+    position: absolute;
+    right: 8px;
+    top: 5px;
+  }
+}

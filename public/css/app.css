@@ -21399,3 +21399,70 @@ table.text-center th {
   border-radius: 50%;
 }
 
+#PublierAnnonce {
+  background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#PublierAnnonce a {
+  text-decoration: none;
+  color: #00aff5;
+  font-size: 14px;
+}
+
+#PublierAnnonce .stepper .stepItem {
+  position: relative;
+}
+
+#PublierAnnonce .stepper .stepItem .divider {
+  width: 100px;
+  height: 1px;
+  background-color: #00aff5;
+}
+
+#PublierAnnonce .stepper .stepItem .number {
+  margin-top: -7px;
+  padding-left: 4px;
+}
+
+#PublierAnnonce .stepper .stepItem .textd {
+  font-size: 12px;
+  position: absolute;
+  right: -37px;
+  top: -8px;
+}
+
+#PublierAnnonce .activestep {
+  background-color: #00aff5;
+  color: #fff;
+}
+
+#PublierAnnonce .number {
+  border: 1px solid #00aff5;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  line-height: 14px;
+  padding-left: 3px;
+  font-size: 12px;
+}
+
+#PublierAnnonce .desc {
+  font-size: 12px;
+}
+
+#PublierAnnonce .numberchance {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  font-size: 36px;
+}
+
+#PublierAnnonce .close {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+

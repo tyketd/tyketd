@@ -21433,6 +21433,11 @@ table.text-center th {
   top: -8px;
 }
 
+#PublierAnnonce .activestep {
+  background-color: #00aff5;
+  color: #fff;
+}
+
 #PublierAnnonce .number {
   border: 1px solid #00aff5;
   height: 16px;

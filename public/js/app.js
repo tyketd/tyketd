@@ -12212,6 +12212,13 @@ $(function () {
         this.param = {
             blockTrain: $("#PublierAnnonce #blockTrain"),
             CbbMoyen: $("#PublierAnnonce #CbbMoyen"),
+            pubierstep1: $("#PublierAnnonce #pubierstep1"),
+            pubierstep2: $("#PublierAnnonce #pubierstep2"),
+            btnnextSpet: $("#PublierAnnonce #btnnextSpet"),
+            btnPrevStep: $("#PublierAnnonce #btnPrevStep"),
+            stepItem2: $("#PublierAnnonce .stepItem2"),
+            activestep1: $("#PublierAnnonce #activestep1"),
+            nextStapMap: $("#PublierAnnonce #nextStapMap"),
             blockVoiture: $("#PublierAnnonce #blockVoiture")
         };
     };
@@ -12236,6 +12243,27 @@ $(function () {
             }
 
             //
+        });
+
+        MyPublierAnnonceClass.param.btnnextSpet.click(function () {
+            MyPublierAnnonceClass.param.pubierstep1.fadeOut();
+            MyPublierAnnonceClass.param.pubierstep2.fadeIn();
+            MyPublierAnnonceClass.param.stepItem2.fadeIn();
+            MyPublierAnnonceClass.param.nextStapMap.fadeIn();
+            MyPublierAnnonceClass.param.activestep1.addClass('activestep');
+            $('html, body').animate({
+                scrollTop: $('html').offset().top
+            }, 'slow');
+        });
+        MyPublierAnnonceClass.param.btnPrevStep.click(function () {
+            MyPublierAnnonceClass.param.pubierstep1.fadeIn();
+            MyPublierAnnonceClass.param.pubierstep2.fadeOut();
+            MyPublierAnnonceClass.param.stepItem2.fadeOut();
+            MyPublierAnnonceClass.param.nextStapMap.fadeOut();
+            MyPublierAnnonceClass.param.activestep1.removeClass('activestep');
+            $('html, body').animate({
+                scrollTop: $('html').offset().top
+            }, 'slow');
         });
     }
 });

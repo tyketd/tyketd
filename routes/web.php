@@ -48,7 +48,7 @@ Route::prefix('profil')->group(function () {
 
 //ANNONCE
 Route::prefix('annonce')->group(function () {
-    Route::get('/publier','annonce\AnnonceController@publier')->name("publierannonce");
+    Route::get('/publier','Annonce\AnnonceController@publier')->name("publierannonce");
 });
 
 //Route::resource('reservation', 'ReservationController');

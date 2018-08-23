@@ -67,7 +67,7 @@
                                        je sohaite partager mon trajet avec des gens ponctuels et respecteux
                                    </span>
                                    <div class="d-flex mt-3">
-                                       <a type="button" class="btn btn-primary bg-blue">
+                                       <a type="button" class="btn btn-primary bg-blue"  data-toggle="modal" data-target="#contactConducteurModalLabel">
                                            <i class="fa fa-comments mt-1 mr-2"></i> Contactez le conducteur
                                        </a>
                                    </div>
@@ -120,12 +120,12 @@
                        <div class="d-flex flex-column mb-3">
                            <div class="d-flex flex-column mt-2 border mb-3">
                                <div class="d-flex flex-row p-3 justify-content-between border-bottom ">
-                                   <span class="d-flex pt-2">Prix par place</span>
+                                   <span class="d-flex pt-2">Prix par coli</span>
                                    <h4 class="d-flex pt-1">13,00 $</h4>
                                </div>
                                <div class="d-flex flex-column p-3 justify-content-center">
                                    <span class="d-flex text-center text-black-50 flex-row justify-content-center">
-                                       <span class="d-flex">Passagers sur ce trajet</span></span>
+                                       <span class="d-flex">Colis sur ce trajet</span></span>
                                    <div class="d-flex flex-row justify-content-center">
                                        <i class="d-flex fa fa-wheelchair m-2"></i>
                                        <i class="d-flex fa fa-wheelchair m-2"></i>
@@ -133,7 +133,7 @@
                                    </div>
                                    <div class="d-flex flex-row  justify-content-center">
                                        <h2 class="d-flex">9</h2>
-                                       <span class="d-flex ml-2 mt-2 text-black-50">places restantes</span>
+                                       <span class="d-flex ml-2 mt-2 text-black-50">colis restantes</span>
                                    </div>
                                </div>
                            </div>
@@ -229,6 +229,7 @@
                </div>
            </div>
         </div>
+        @include('Trajet.inc.contactConducteur')
     </div>
 
 @endsection

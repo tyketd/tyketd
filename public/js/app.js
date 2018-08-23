@@ -145,6 +145,7 @@ __webpack_require__(11);
 __webpack_require__(14);
 __webpack_require__(16);
 __webpack_require__(18);
+__webpack_require__(33);
 
 /***/ }),
 /* 4 */
@@ -12263,6 +12264,67 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Created by mkwen on 23/08/2018.
+ */
+__webpack_require__(34);
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Created by mkwen on 23/08/2018.
+ */
+
+$(function () {
+    var TrajetDetailClass = function TrajetDetailClass() {
+        _classCallCheck(this, TrajetDetailClass);
+
+        this.Id = $("#TrajetDetail");
+        // on recupere les parametres
+        this.params = {
+            contactPart1: $('#TrajetDetail #firstpart'),
+            contactPart2: $('#TrajetDetail #secondPart'),
+            btnOpenSecondPart: $('#TrajetDetail #btnOpenSecondPart'),
+            blockbtnfirstpart: $('#TrajetDetail #blockbtnfirstpart'),
+            blockbtnsecondpart: $('#TrajetDetail #blockbtnsecondpart'),
+            btnBackoPart1: $('#TrajetDetail #btnBackoPart1')
+        };
+    };
+
+    var MyTrajetDetailClass = new TrajetDetailClass();
+
+    if (MyTrajetDetailClass.Id.data("page") === "TrajetDetail") {
+
+        var variabl = MyTrajetDetailClass.params;
+        MyTrajetDetailClass.params.btnOpenSecondPart.click(function (e) {
+
+            variabl.contactPart2.fadeIn(0.1);
+            variabl.blockbtnsecondpart.fadeIn(0.1);
+            variabl.contactPart1.fadeOut(0.1);
+            variabl.blockbtnfirstpart.fadeOut(0.1);
+            e.preventDefault();
+        });
+        variabl.btnBackoPart1.click(function (e) {
+            variabl.contactPart1.fadeIn(0.1);
+            variabl.blockbtnfirstpart.fadeIn(0.1);
+            variabl.contactPart2.fadeOut(0.1);
+            variabl.blockbtnsecondpart.fadeOut(0.1);
+        });
+    }
+});
 
 /***/ })
 /******/ ]);

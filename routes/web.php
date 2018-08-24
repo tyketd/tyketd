@@ -12,6 +12,9 @@
 */
 
 Route::get('/','Welcome\WelcomeController@index')->name("welcome");
+Route::get('/howIsWork',function(){
+    return view('footer.howIsWorks');
+});
 Route::get('/reservation','Reservation\ReservationController@index')->name("reservation");
 Route::get('/reservation/{id}','Reservation\ReservationController@detail')->name("detailReservation");
 
@@ -43,6 +46,8 @@ Route::prefix('profil')->group(function () {
     Route::get('/adressePostale','Profil\ProfilController@adressePostale')->name("adressePostale");
     Route::get('/avisRecu','Profil\ProfilController@avisRecu')->name("avisRecu");
     Route::get('/avisLaisse','Profil\ProfilController@avisLaisse')->name("avisLaisse");
+    Route::get('/howIsWork','Footer\footerController@howIsWork')->name('howIsWork');
+    Route::get('/userInformation','footer\FooterController@userInformation')->name('userInformation');
 });
 
 

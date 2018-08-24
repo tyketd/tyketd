@@ -1,0 +1,49 @@
+#howIsWorks{
+	.main{
+		margin-left: 10px;
+		margin-right: : 10px;
+	}
+	.row {
+	     margin-left: 0px;
+	     margin-right: 0px;
+	      }
+	.no-border td{
+		border-width:0px;
+	}
+	tr:first-child td{
+		padding: 0px;
+	}
+	.table-nav .nav-link:first-child{
+		border-radius: 5px 5px 0px 0rem;
+		text-align: left;
+	}
+	.table-nav .nav-link:last-child{
+		text-align: left;
+		border-radius: 5px 5px 0px 0rem;
+	}
+	.group-list{
+		padding-right: 15px;
+		padding-left: 15px;
+		padding-top: 0px;	
+	}
+	.box-light{
+		border:2px solid #fdf5c4;
+		background-color: #fffbec;
+		padding-left: 0px;
+		margin:15px 0px;
+		text-align: justify;
+	}
+	.box-light img{
+		padding-top:10px;
+	}
+	.white-box{
+		padding-left: 0px;
+		margin: 15px 0px;
+		text-align: justify;
+	}
+	@media only screen and (max-width: 577px) {
+    .list-group-item{
+    	text-align: center;
+    }
+}
+}

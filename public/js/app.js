@@ -95,7 +95,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(28);
+module.exports = __webpack_require__(30);
 
 
 /***/ }),
@@ -120,7 +120,7 @@ require("./master");
 */
 __webpack_require__(3);
 
-window.Vue = __webpack_require__(20);
+window.Vue = __webpack_require__(22);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -128,7 +128,7 @@ window.Vue = __webpack_require__(20);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(24));
+Vue.component('example-component', __webpack_require__(26));
 
 //const app = new Vue({
 //    el: '#app'
@@ -145,7 +145,7 @@ __webpack_require__(11);
 __webpack_require__(14);
 __webpack_require__(16);
 __webpack_require__(18);
-__webpack_require__(33);
+__webpack_require__(20);
 
 /***/ }),
 /* 4 */
@@ -614,6 +614,63 @@ $(function () {
 
 /***/ }),
 /* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Created by mkwen on 23/08/2018.
+ */
+__webpack_require__(21);
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Created by mkwen on 23/08/2018.
+ */
+
+$(function () {
+    var TrajetDetailClass = function TrajetDetailClass() {
+        _classCallCheck(this, TrajetDetailClass);
+
+        this.Id = $("#TrajetDetail");
+        // on recupere les parametres
+        this.params = {
+            contactPart1: $('#TrajetDetail #firstpart'),
+            contactPart2: $('#TrajetDetail #secondPart'),
+            btnOpenSecondPart: $('#TrajetDetail #btnOpenSecondPart'),
+            blockbtnfirstpart: $('#TrajetDetail #blockbtnfirstpart'),
+            blockbtnsecondpart: $('#TrajetDetail #blockbtnsecondpart'),
+            btnBackoPart1: $('#TrajetDetail #btnBackoPart1')
+        };
+    };
+
+    var MyTrajetDetailClass = new TrajetDetailClass();
+
+    if (MyTrajetDetailClass.Id.data("page") === "TrajetDetail") {
+
+        var variabl = MyTrajetDetailClass.params;
+        MyTrajetDetailClass.params.btnOpenSecondPart.click(function (e) {
+
+            variabl.contactPart2.fadeIn(0.1);
+            variabl.blockbtnsecondpart.fadeIn(0.1);
+            variabl.contactPart1.fadeOut(0.1);
+            variabl.blockbtnfirstpart.fadeOut(0.1);
+            e.preventDefault();
+        });
+        variabl.btnBackoPart1.click(function (e) {
+            variabl.contactPart1.fadeIn(0.1);
+            variabl.blockbtnfirstpart.fadeIn(0.1);
+            variabl.contactPart2.fadeOut(0.1);
+            variabl.blockbtnsecondpart.fadeOut(0.1);
+        });
+    }
+});
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11576,10 +11633,10 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(21).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(23).setImmediate))
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -11635,7 +11692,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(22);
+__webpack_require__(24);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -11649,7 +11706,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -11839,10 +11896,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(23)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(25)))
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -12032,15 +12089,15 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(25)
+var normalizeComponent = __webpack_require__(27)
 /* script */
-var __vue_script__ = __webpack_require__(26)
+var __vue_script__ = __webpack_require__(28)
 /* template */
-var __vue_template__ = __webpack_require__(27)
+var __vue_template__ = __webpack_require__(29)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -12079,7 +12136,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -12188,7 +12245,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12217,7 +12274,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12260,71 +12317,10 @@ if (false) {
 }
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Created by mkwen on 23/08/2018.
- */
-__webpack_require__(34);
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 23/08/2018.
- */
-
-$(function () {
-    var TrajetDetailClass = function TrajetDetailClass() {
-        _classCallCheck(this, TrajetDetailClass);
-
-        this.Id = $("#TrajetDetail");
-        // on recupere les parametres
-        this.params = {
-            contactPart1: $('#TrajetDetail #firstpart'),
-            contactPart2: $('#TrajetDetail #secondPart'),
-            btnOpenSecondPart: $('#TrajetDetail #btnOpenSecondPart'),
-            blockbtnfirstpart: $('#TrajetDetail #blockbtnfirstpart'),
-            blockbtnsecondpart: $('#TrajetDetail #blockbtnsecondpart'),
-            btnBackoPart1: $('#TrajetDetail #btnBackoPart1')
-        };
-    };
-
-    var MyTrajetDetailClass = new TrajetDetailClass();
-
-    if (MyTrajetDetailClass.Id.data("page") === "TrajetDetail") {
-
-        var variabl = MyTrajetDetailClass.params;
-        MyTrajetDetailClass.params.btnOpenSecondPart.click(function (e) {
-
-            variabl.contactPart2.fadeIn(0.1);
-            variabl.blockbtnsecondpart.fadeIn(0.1);
-            variabl.contactPart1.fadeOut(0.1);
-            variabl.blockbtnfirstpart.fadeOut(0.1);
-            e.preventDefault();
-        });
-        variabl.btnBackoPart1.click(function (e) {
-            variabl.contactPart1.fadeIn(0.1);
-            variabl.blockbtnfirstpart.fadeIn(0.1);
-            variabl.contactPart2.fadeOut(0.1);
-            variabl.blockbtnsecondpart.fadeOut(0.1);
-        });
-    }
-});
 
 /***/ })
 /******/ ]);

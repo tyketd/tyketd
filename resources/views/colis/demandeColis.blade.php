@@ -18,15 +18,15 @@
                                 </div>
                                 <input type="text" placeholder="e.g Meuble, Pièce automobile ..." class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                             </div>
-                            <div class="input-group d-flex btnaddremove">
-                                <div class="input-group-prepend">
-                                    <button class="btn btn-outline-secondary bg-blue" type="button">-</button>
-                                </div>
-                                <label class="label-default pl-3 pt-2  pr-3 mb-0" >X 1</label>
-                                <div class="input-group-prepend">
-                                    <button class="btn btn-outline-secondary  bg-blue" type="button">+</button>
-                                </div>
-                            </div>
+                            {{--<div class="input-group d-flex btnaddremove">--}}
+                                {{--<div class="input-group-prepend">--}}
+                                    {{--<button class="btn btn-outline-secondary bg-blue" type="button">-</button>--}}
+                                {{--</div>--}}
+                                {{--<label class="label-default pl-3 pt-2  pr-3 mb-0" >X 1</label>--}}
+                                {{--<div class="input-group-prepend">--}}
+                                    {{--<button class="btn btn-outline-secondary  bg-blue" type="button">+</button>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                         </div>
                         <div class="input-group d-flex ">
                             <div class="input-group-prepend ">

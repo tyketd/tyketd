@@ -15999,11 +15999,6 @@ readers do not read off random characters that represent icons */
   color: #054752;
 }
 
-#auth .card {
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-}
-
 #auth a {
   text-decoration: none;
   cursor: pointer;
@@ -21464,5 +21459,94 @@ table.text-center th {
   position: absolute;
   right: 8px;
   top: 5px;
+}
+
+#TrajetDetail {
+  background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#TrajetDetail a {
+  text-decoration: none;
+  color: #00aff5;
+  font-size: 14px;
+}
+
+#TrajetDetail .imglist {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#TrajetDetail .blimg {
+  width: 200px;
+}
+
+#TrajetDetail .block1 .title {
+  width: 150px;
+}
+
+#TrajetDetail .block1 .circlelink {
+  height: 18px;
+  width: 18px;
+  padding-left: 3px;
+  line-height: 18px;
+  border-radius: 50%;
+  border: 1px solid dodgerblue;
+}
+
+#TrajetDetail .block1 img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#TrajetDetail .block2 img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#TrajetDetail .block2 .eltbl2-1 {
+  height: 37px;
+}
+
+#TrajetDetail .block2 .eltbl2-2 {
+  height: 100px;
+}
+
+#TrajetDetail .blockpart2 .profil {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#TrajetDetail .blockpart2 .avis img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#TrajetDetail .blockpart2 .avis .circlegreen {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  #TrajetDetail .paramsearch {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12) !important;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  #TrajetDetail .paramsearch span,
+  #TrajetDetail .paramsearch input {
+    margin: 8px 0px !important;
+  }
+
+  #TrajetDetail .w-50 {
+    width: 100% !important;
+  }
 }
 

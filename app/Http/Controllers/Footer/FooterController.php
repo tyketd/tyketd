@@ -10,7 +10,7 @@ class FooterController extends Controller
     
     public function howIswork()
     {
-        return view('footer.howIswork');
+        return view('footer.howIsWorks');
         
     }
     public function userInformation()

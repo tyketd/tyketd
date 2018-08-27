@@ -95,7 +95,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(26);
+module.exports = __webpack_require__(12);
 
 
 /***/ }),
@@ -120,7 +120,7 @@ require("./master");
 */
 __webpack_require__(3);
 
-window.Vue = __webpack_require__(18);
+window.Vue = __webpack_require__(4);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -128,7 +128,7 @@ window.Vue = __webpack_require__(18);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(22));
+Vue.component('example-component', __webpack_require__(8));
 
 //const app = new Vue({
 //    el: '#app'
@@ -136,399 +136,12 @@ Vue.component('example-component', __webpack_require__(22));
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-__webpack_require__(4);
-__webpack_require__(6);
-__webpack_require__(9);
-__webpack_require__(11);
-__webpack_require__(14);
-__webpack_require__(16);
-<<<<<<< HEAD
-=======
-__webpack_require__(31);
->>>>>>> c210c804f98039a8d48f1c500655a70d93f5fde3
+throw new Error("Module build failed: SyntaxError: C:/wamp64/www/projet tyketd/tyketd/resources/assets/js/master.js: Unexpected token (7:0)\n\n   5 | require(\"./../Colis/js/app\");\n   6 | require(\"./../Profil/js/app\");\n>  7 | <<<<<<< HEAD\n     | ^\n   8 | require(\"./../Footer/js/app\");\n   9 | =======\n  10 | require(\"./../Annonce/js/app\");\n");
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(5);
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(7);
-__webpack_require__(8);
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-$(function () {
-    var WelcomeClass = function WelcomeClass() {
-        _classCallCheck(this, WelcomeClass);
-
-        this.Id = $("#Welcome");
-        this.Block = {
-            Item1: $("#block .iteml"),
-            Item3: $("#block .item2"),
-            Item2: $("#block .item3"),
-            MyAlert: function MyAlert(message) {
-                bootbox.alert(message, function () {
-                    console.log("end action");
-                });
-            }
-        };
-        this.Confirm = function (message) {
-            bootbox.confirm(message, function (result) {
-                if (result) {
-                    console.log("Ok .....");
-                } else {
-                    console.log("No ......");
-                }
-            });
-        };
-        this.Prompt = function (message) {
-            bootbox.prompt(message, function (result) {
-                if (result) {
-                    console.log("validate .....");
-                }
-            });
-        };
-    };
-
-    var MyWelcomClass = new WelcomeClass();
-
-    if (MyWelcomClass.Id.data("page") === "Welcome") {
-        //do  something  here
-
-        // alert
-        // MyWelcomClass.Block.MyAlert("Simple alert");
-
-        //Promp
-        // MyWelcomClass.Prompt("Entrer something");
-
-        //confirm
-        // MyWelcomClass.Confirm("Are you sure to do this ?");
-    }
-
-    $('#header .dropdown-toggle').dropdown();
-});
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 07/08/2018.
- */
-/** Class qui permet de manipuler le block help en bas de la page a droite
- *  pour l'instant elle affiche les user connect"s et garce a la fleche du bas on peut r�duire ce block
- */
-$(function () {
-    var HelpClass = function HelpClass() {
-        _classCallCheck(this, HelpClass);
-
-        this.Id = $("#help");
-        // on recupere le bouton pour capturer laction
-        this.Btn = {
-            btnclose: $("#help #btnhidehelp") };
-    };
-
-    var MyHelpClass = new HelpClass();
-
-    if (MyHelpClass.Id.data("page") === "Help") {
-        // fonction sexcer�ant su le click de la fleche et permet de reduire le block help
-        MyHelpClass.Btn.btnclose.click(function () {
-            MyHelpClass.Id.addClass('hidehelp');
-        });
-    }
-});
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(10);
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 07/08/2018.
- */
-/** Class qui permet de manipuler le block help en bas de la page a droite
- *  pour l'instant elle affiche les user connect"s et garce a la fleche du bas on peut r�duire ce block
- */
-$(function () {
-    var HeaderClass = function HeaderClass() {
-        _classCallCheck(this, HeaderClass);
-
-        this.Id = $("#header");
-        // on recupere les parametres
-        this.params = {
-            backdrop: $("#header .backdrop"),
-            btnopenmenu: $("#header .btnopenmenu"),
-            menu: $("#header .detailmenu")
-        };
-    };
-
-    var MyHeaderClass = new HeaderClass();
-
-    if (MyHeaderClass.Id.data("page") === "Hedear") {
-
-        MyHeaderClass.params.btnopenmenu.click(function (e) {
-            MyHeaderClass.params.backdrop.fadeIn();
-            MyHeaderClass.params.menu.fadeIn();
-            e.preventDefault();
-        });
-        MyHeaderClass.params.backdrop.click(function (e) {
-            MyHeaderClass.params.backdrop.fadeOut();
-            MyHeaderClass.params.menu.fadeOut();
-            e.preventDefault();
-        });
-    }
-});
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(12);
-__webpack_require__(13);
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 07/08/2018.
- */
-/** Class qui permet de manipuler le block help en bas de la page a droite
- *  pour l'instant elle affiche les user connect"s et garce a la fleche du bas on peut r�duire ce block
- */
-$(function () {
-    var ReservationClass = function ReservationClass() {
-        _classCallCheck(this, ReservationClass);
-
-        this.Id = $("#reservation");
-        // on recupere les parametres
-        this.params = {};
-    };
-
-    var MyReservationClass = new ReservationClass();
-
-    if (MyReservationClass.Id.data("page") === "Reservation") {}
-});
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 07/08/2018.
- */
-/** Class qui permet de manipuler le block help en bas de la page a droite
- *  pour l'instant elle affiche les user connect"s et garce a la fleche du bas on peut r�duire ce block
- */
-$(function () {
-    var DetailReservationClass = function DetailReservationClass() {
-        _classCallCheck(this, DetailReservationClass);
-
-        this.Id = $("#DetailReservation");
-        // on recupere les parametres
-        this.params = {};
-    };
-
-    var MyDetailReservationClass = new DetailReservationClass();
-
-    if (MyDetailReservationClass.Id.data("page") === "DetailReservation") {}
-});
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Created by mkwen on 12/08/2018.
- */
-__webpack_require__(15);
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 12/08/2018.
- */
-
-$(function () {
-    var DemandeColisClass = function DemandeColisClass() {
-        _classCallCheck(this, DemandeColisClass);
-
-        this.Id = $("#DemandeColis");
-        // on recupere le bouton pour capturer laction
-        this.Btn = {
-            btnclose: $("#DemandeColis #btnestimateprise"),
-            blockEstimaPrix: $("#DemandeColis .estimateprix")
-        };
-    };
-
-    var MyDemandeColisClass = new DemandeColisClass();
-
-    if (MyDemandeColisClass.Id.data("page") === "DemandeColis") {
-        //console.log("colis");
-        // fonction sexcer�ant su le click de la fleche et permet de reduire le block DemandeColis
-        MyDemandeColisClass.Btn.btnclose.click(function () {
-            MyDemandeColisClass.Btn.blockEstimaPrix.fadeIn();
-        });
-    }
-});
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Created by mkwen on 16/08/2018.
- */
-
-__webpack_require__(17);
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 16/08/2018.
- */
-
-$(function () {
-    var VerificationClass = function VerificationClass() {
-        _classCallCheck(this, VerificationClass);
-
-        this.Id = $("#verificationProfil");
-        // on recupere les parametres
-        this.params = {
-            btnopenstep1: $("#verificationProfil #btnopenstep1"),
-            step0: $("#verificationProfil #step0"),
-            //step1 : $("#verificationProfil #step1"),
-            step1: $("#verificationProfil #step1"),
-            step2: $("#verificationProfil #step2"),
-            step3: $("#verificationProfil #step3"),
-            step4: $("#verificationProfil #step4"),
-            step5: $("#verificationProfil #step5"),
-            step6: $("#verificationProfil #step6"),
-            btnopenstep2: $("#verificationProfil .btnopenstep2"),
-            btnbacksetp1: $("#verificationProfil #btnbacksetp1"),
-            btnopenstep3: $("#verificationProfil .btnopenstep3"),
-            btnbacksetp2: $("#verificationProfil #btnbacksetp2"),
-            btnopenstep4: $("#verificationProfil .btnopenstep4"),
-            btnbacksetp3: $("#verificationProfil #btnbacksetp3"),
-            btnopenstep5: $("#verificationProfil .btnopenstep5"),
-            btnbacksetp4: $("#verificationProfil #btnbacksetp4"),
-            btnopenstep6: $("#verificationProfil .btnopenstep6"),
-            btnbacksetp5: $("#verificationProfil #btnbacksetp5")
-        };
-    };
-
-    var MyVerificationClass = new VerificationClass();
-
-    if (MyVerificationClass.Id.data("page") === "verificationProfil") {
-
-        MyVerificationClass.params.btnopenstep1.click(function (e) {
-            MyVerificationClass.params.step1.fadeIn();
-            MyVerificationClass.params.step0.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 2
-        MyVerificationClass.params.btnopenstep2.click(function (e) {
-            MyVerificationClass.params.step2.fadeIn();
-            MyVerificationClass.params.step1.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp1.click(function (e) {
-            MyVerificationClass.params.step0.fadeIn();
-            MyVerificationClass.params.step2.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 3
-        MyVerificationClass.params.btnopenstep3.click(function (e) {
-            MyVerificationClass.params.step3.fadeIn();
-            MyVerificationClass.params.step2.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp2.click(function (e) {
-            MyVerificationClass.params.step2.fadeIn();
-            MyVerificationClass.params.step3.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 4
-        MyVerificationClass.params.btnopenstep4.click(function (e) {
-            MyVerificationClass.params.step4.fadeIn();
-            MyVerificationClass.params.step3.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp3.click(function (e) {
-            MyVerificationClass.params.step3.fadeIn();
-            MyVerificationClass.params.step4.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 5
-        MyVerificationClass.params.btnopenstep5.click(function (e) {
-            MyVerificationClass.params.step5.fadeIn();
-            MyVerificationClass.params.step4.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp4.click(function (e) {
-            MyVerificationClass.params.step4.fadeIn();
-            MyVerificationClass.params.step5.fadeOut();
-            e.preventDefault();
-        });
-
-        //STEP 6
-        MyVerificationClass.params.btnopenstep6.click(function (e) {
-            MyVerificationClass.params.step6.fadeIn();
-            MyVerificationClass.params.step5.fadeOut();
-            e.preventDefault();
-        });
-        MyVerificationClass.params.btnbacksetp5.click(function (e) {
-            MyVerificationClass.params.step5.fadeIn();
-            MyVerificationClass.params.step6.fadeOut();
-            e.preventDefault();
-        });
-    }
-});
-
-/***/ }),
-/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11491,10 +11104,10 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(19).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(5).setImmediate))
 
 /***/ }),
-/* 19 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -11550,7 +11163,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(20);
+__webpack_require__(6);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -11564,7 +11177,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -11754,10 +11367,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(21)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(7)))
 
 /***/ }),
-/* 21 */
+/* 7 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -11947,15 +11560,15 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 22 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(23)
+var normalizeComponent = __webpack_require__(9)
 /* script */
-var __vue_script__ = __webpack_require__(24)
+var __vue_script__ = __webpack_require__(10)
 /* template */
-var __vue_template__ = __webpack_require__(25)
+var __vue_template__ = __webpack_require__(11)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11994,7 +11607,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 23 */
+/* 9 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -12103,7 +11716,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 24 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12132,7 +11745,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 25 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12175,104 +11788,10 @@ if (false) {
 }
 
 /***/ }),
-/* 26 */
+/* 12 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n@import \"../Profil/scss/app\";\r\n                            ^\r\n      Invalid CSS after '...ofil/scss/app\";': expected 1 selector or at-rule, was \"<<<<<<< HEAD\"\r\n      in C:\\wamp64\\www\\projet tyketd\\tyketd\\resources\\assets\\sass\\master.scss (line 28, column 30)\n    at runLoaders (C:\\wamp64\\www\\projet tyketd\\tyketd\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\wamp64\\www\\projet tyketd\\tyketd\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\wamp64\\www\\projet tyketd\\tyketd\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\wamp64\\www\\projet tyketd\\tyketd\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\wamp64\\www\\projet tyketd\\tyketd\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (C:\\wamp64\\www\\projet tyketd\\tyketd\\node_modules\\neo-async\\async.js:7974:18)\n    at options.error (C:\\wamp64\\www\\projet tyketd\\tyketd\\node_modules\\node-sass\\lib\\index.js:294:32)");
 
-<<<<<<< HEAD
-=======
-/***/ }),
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Created by mkwen on 20/08/2018.
- */
-__webpack_require__(32);
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 20/08/2018.
- */
-/**
- * Created by mkwen on 12/08/2018.
- */
-
-$(function () {
-    var PublierAnnonceClass = function PublierAnnonceClass() {
-        _classCallCheck(this, PublierAnnonceClass);
-
-        this.Id = $("#PublierAnnonce");
-        // on recupere le bouton pour capturer laction
-        this.param = {
-            blockTrain: $("#PublierAnnonce #blockTrain"),
-            CbbMoyen: $("#PublierAnnonce #CbbMoyen"),
-            pubierstep1: $("#PublierAnnonce #pubierstep1"),
-            pubierstep2: $("#PublierAnnonce #pubierstep2"),
-            btnnextSpet: $("#PublierAnnonce #btnnextSpet"),
-            btnPrevStep: $("#PublierAnnonce #btnPrevStep"),
-            stepItem2: $("#PublierAnnonce .stepItem2"),
-            activestep1: $("#PublierAnnonce #activestep1"),
-            nextStapMap: $("#PublierAnnonce #nextStapMap"),
-            blockVoiture: $("#PublierAnnonce #blockVoiture")
-        };
-    };
-
-    var MyPublierAnnonceClass = new PublierAnnonceClass();
-
-    if (MyPublierAnnonceClass.Id.data("page") === "PublierAnnonce") {
-        //console.log("publier");
-
-        MyPublierAnnonceClass.param.CbbMoyen.change(function () {
-            var val = MyPublierAnnonceClass.param.CbbMoyen.val();
-            if (val == "Train") {
-                console.log(val);
-                MyPublierAnnonceClass.param.blockTrain.fadeIn();
-                MyPublierAnnonceClass.param.blockVoiture.fadeOut();
-            } else if (val == "Voiture") {
-                MyPublierAnnonceClass.param.blockVoiture.fadeIn();
-                MyPublierAnnonceClass.param.blockTrain.fadeOut();
-            } else {
-                MyPublierAnnonceClass.param.blockTrain.fadeOut();
-                MyPublierAnnonceClass.param.blockVoiture.fadeOut();
-            }
-
-            //
-        });
-
-        MyPublierAnnonceClass.param.btnnextSpet.click(function () {
-            MyPublierAnnonceClass.param.pubierstep1.fadeOut();
-            MyPublierAnnonceClass.param.pubierstep2.fadeIn();
-            MyPublierAnnonceClass.param.stepItem2.fadeIn();
-            MyPublierAnnonceClass.param.nextStapMap.fadeIn();
-            MyPublierAnnonceClass.param.activestep1.addClass('activestep');
-            $('html, body').animate({
-                scrollTop: $('html').offset().top
-            }, 'slow');
-        });
-        MyPublierAnnonceClass.param.btnPrevStep.click(function () {
-            MyPublierAnnonceClass.param.pubierstep1.fadeIn();
-            MyPublierAnnonceClass.param.pubierstep2.fadeOut();
-            MyPublierAnnonceClass.param.stepItem2.fadeOut();
-            MyPublierAnnonceClass.param.nextStapMap.fadeOut();
-            MyPublierAnnonceClass.param.activestep1.removeClass('activestep');
-            $('html, body').animate({
-                scrollTop: $('html').offset().top
-            }, 'slow');
-        });
-    }
-});
-
->>>>>>> c210c804f98039a8d48f1c500655a70d93f5fde3
 /***/ })
 /******/ ]);

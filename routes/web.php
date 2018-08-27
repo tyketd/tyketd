@@ -56,5 +56,11 @@ Route::prefix('annonce')->group(function () {
     Route::get('/publier','Annonce\AnnonceController@publier')->name("publierannonce");
 });
 
+
+//TRAJET
+Route::prefix('trajet')->group(function () {
+    Route::get('/detail/{id}','Trajet\TrajetController@detail')->name("detailTrajet");
+});
+
 //Route::resource('reservation', 'ReservationController');
 

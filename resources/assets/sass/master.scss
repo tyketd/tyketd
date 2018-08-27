@@ -27,8 +27,16 @@
 //Profil
 @import "../Profil/scss/app";
 
+ {{-- footer  --}}
+ @import "../Footer/scss/app";
+
+
+// Annonce
+@import "../Annonce/scss/app";
+
 // Annonce
 @import "../Annonce/scss/app";
 
 //TRAJET
 @import "../Trajet/scss/app";
+

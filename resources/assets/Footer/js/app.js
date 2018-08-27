@@ -1,0 +1,2 @@
+require('./howIsWorks');
+require('./userInformation');

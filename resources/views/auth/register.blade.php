@@ -1,5 +1,4 @@
 @extends('auth.layout')
-
 @section('authcontent')
     <div login="register" class="card h-100">
         <div class="card-header">{{ __('Register') }}</div>

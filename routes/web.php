@@ -62,5 +62,11 @@ Route::prefix('trajet')->group(function () {
     Route::get('/detail/{id}','Trajet\TrajetController@detail')->name("detailTrajet");
 });
 
+
+//TRAJET
+Route::prefix('acheminement')->group(function () {
+    Route::get('/','Acheminement\AcheminementController@index')->name("miseEnAcheminement");
+});
+
 //Route::resource('reservation', 'ReservationController');
 

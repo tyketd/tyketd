@@ -21057,6 +21057,35 @@ table.text-center th {
   }
 }
 
+@media print {
+  #pdfColis {
+    display: block !important;
+  }
+
+  #pdfColis .blocklogo1 {
+    background-color: #f5f8fa;
+  }
+
+  #pdfColis .blocklogo1 img {
+    height: 100px;
+  }
+
+  #pdfColis .blocklogo2 {
+    color: #fff;
+    background: #054752;
+    font-size: 24px;
+  }
+
+  #pdfColis .blockqr img {
+    height: 200px;
+    width: auto;
+  }
+
+  .noprint {
+    display: none !important;
+  }
+}
+
 #alerte {
   font-size: 14px;
   color: #054752;

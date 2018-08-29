@@ -1,4 +1,4 @@
-<div class="" id="header" data-page="Hedear">
+<div class="noprint" id="header"  data-page="Hedear">
     <div class="pos-f-t hidden-sm hidden-lg hidden-md">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark d-flex flex-column justify-content-center">

@@ -114,7 +114,7 @@
                                <span class="d-flex ml-3">(Horaire d'arrivé) </span>
                            </div>
                        </div>
-
+                       @include('Trajet.inc.chatTrajet')
                    </div>
                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                        <div class="d-flex flex-column mb-3">

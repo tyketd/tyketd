@@ -1,0 +1,32 @@
+
+
+@media print {
+  #pdfColis{
+    display: block!important;
+  }
+  #pdfColis{
+    .blocklogo1{
+      background-color: #f5f8fa;
+      img{
+        height: 100px;
+      }
+    }
+    .blocklogo2{
+      color: #fff;
+      background: $bluetext;
+      font-size: 24px;
+
+    }
+    .blockqr{
+      img{
+        height: 200px;
+        width: auto;
+      }
+    }
+
+
+  }
+  .noprint{
+    display: none!important;
+  }
+}

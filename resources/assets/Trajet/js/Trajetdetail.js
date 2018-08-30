@@ -13,7 +13,9 @@ $(function () {
                 btnOpenSecondPart:$('#TrajetDetail #btnOpenSecondPart'),
                 blockbtnfirstpart:$('#TrajetDetail #blockbtnfirstpart'),
                 blockbtnsecondpart:$('#TrajetDetail #blockbtnsecondpart'),
-                btnBackoPart1:$('#TrajetDetail #btnBackoPart1')
+                btnBackoPart1:$('#TrajetDetail #btnBackoPart1'),
+                chatTrajet:$('#TrajetDetail #chatTrajet'),
+                btnposerkestion:$('#TrajetDetail .btnposerkestion')
             }
         }
     }
@@ -36,6 +38,9 @@ $(function () {
             variabl.blockbtnfirstpart.fadeIn(0.1);
             variabl.contactPart2.fadeOut(0.1);
             variabl.blockbtnsecondpart.fadeOut(0.1);
+        });
+        variabl.btnposerkestion.click(function(e){
+            variabl.chatTrajet.fadeIn(0.1);
         });
     }
 });

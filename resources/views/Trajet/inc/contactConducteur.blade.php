@@ -24,7 +24,7 @@
                         <textarea name="" id="" class="d-flex form-control" rows="4"></textarea>
                         <div class="d-flex mt-2 flex-row justify-content-end">
                             <a href="#" class="btn bg-white text-black" id="btnBackoPart1">Précédent</a>
-                            <a href="#" class="btn bg-blue text-white"  >Poser une question</a>
+                            <a href="#" class="btn bg-blue text-white btnposerkestion" data-dismiss="modal" >Poser une question</a>
                         </div>
                     </div>
                 </div>

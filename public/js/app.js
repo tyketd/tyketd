@@ -371,6 +371,7 @@ $(function () {
  * Created by mkwen on 12/08/2018.
  */
 __webpack_require__(15);
+__webpack_require__(37);
 
 /***/ }),
 /* 15 */
@@ -464,68 +465,68 @@ $(function () {
     if (MyVerificationClass.Id.data("page") === "verificationProfil") {
 
         MyVerificationClass.params.btnopenstep1.click(function (e) {
-            MyVerificationClass.params.step1.fadeIn();
-            MyVerificationClass.params.step0.fadeOut();
+            MyVerificationClass.params.step1.fadeIn(100);
+            MyVerificationClass.params.step0.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 2
         MyVerificationClass.params.btnopenstep2.click(function (e) {
-            MyVerificationClass.params.step2.fadeIn();
-            MyVerificationClass.params.step1.fadeOut();
+            MyVerificationClass.params.step2.fadeIn(100);
+            MyVerificationClass.params.step1.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp1.click(function (e) {
-            MyVerificationClass.params.step0.fadeIn();
-            MyVerificationClass.params.step2.fadeOut();
+            MyVerificationClass.params.step0.fadeIn(100);
+            MyVerificationClass.params.step2.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 3
         MyVerificationClass.params.btnopenstep3.click(function (e) {
-            MyVerificationClass.params.step3.fadeIn();
-            MyVerificationClass.params.step2.fadeOut();
+            MyVerificationClass.params.step3.fadeIn(100);
+            MyVerificationClass.params.step2.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp2.click(function (e) {
-            MyVerificationClass.params.step2.fadeIn();
-            MyVerificationClass.params.step3.fadeOut();
+            MyVerificationClass.params.step2.fadeIn(100);
+            MyVerificationClass.params.step3.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 4
         MyVerificationClass.params.btnopenstep4.click(function (e) {
-            MyVerificationClass.params.step4.fadeIn();
-            MyVerificationClass.params.step3.fadeOut();
+            MyVerificationClass.params.step4.fadeIn(100);
+            MyVerificationClass.params.step3.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp3.click(function (e) {
-            MyVerificationClass.params.step3.fadeIn();
-            MyVerificationClass.params.step4.fadeOut();
+            MyVerificationClass.params.step3.fadeIn(100);
+            MyVerificationClass.params.step4.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 5
         MyVerificationClass.params.btnopenstep5.click(function (e) {
-            MyVerificationClass.params.step5.fadeIn();
-            MyVerificationClass.params.step4.fadeOut();
+            MyVerificationClass.params.step5.fadeIn(100);
+            MyVerificationClass.params.step4.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp4.click(function (e) {
-            MyVerificationClass.params.step4.fadeIn();
-            MyVerificationClass.params.step5.fadeOut();
+            MyVerificationClass.params.step4.fadeIn(100);
+            MyVerificationClass.params.step5.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 6
         MyVerificationClass.params.btnopenstep6.click(function (e) {
-            MyVerificationClass.params.step6.fadeIn();
-            MyVerificationClass.params.step5.fadeOut();
+            MyVerificationClass.params.step6.fadeIn(100);
+            MyVerificationClass.params.step5.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp5.click(function (e) {
-            MyVerificationClass.params.step5.fadeIn();
-            MyVerificationClass.params.step6.fadeOut();
+            MyVerificationClass.params.step5.fadeIn(100);
+            MyVerificationClass.params.step6.fadeOut(100);
             e.preventDefault();
         });
     }
@@ -12394,6 +12395,54 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Created by mkwen on 12/08/2018.
+ */
+
+$(function () {
+    var DemandeTransportClass = function DemandeTransportClass() {
+        _classCallCheck(this, DemandeTransportClass);
+
+        this.Id = $("#DemandeTransport");
+        // on recupere le bouton pour capturer laction
+        this.param = {
+            Etape2DemandeTransport: $("#DemandeTransport #Etape2DemandeTransport"),
+            etap1DemandeTransport: $("#DemandeTransport #etap1DemandeTransport"),
+            btnnextSpet: $("#DemandeTransport #btnnextSpet"),
+            btnprevSpet: $("#DemandeTransport #btnprevSpet"),
+            btnvalideannonce: $("#DemandeTransport #btnvalideannonce")
+        };
+    };
+
+    var MyDemandeTransportClass = new DemandeTransportClass();
+
+    if (MyDemandeTransportClass.Id.data("page") === "DemandeTransport") {
+
+        // fonction sexcer�ant su le click de la fleche et permet de reduire le block DemandeTransport
+        var param = MyDemandeTransportClass.param;
+        param.btnnextSpet.click(function () {
+            param.Etape2DemandeTransport.fadeIn();
+            param.etap1DemandeTransport.fadeOut();
+        });
+        param.btnprevSpet.click(function () {
+            param.Etape2DemandeTransport.fadeOut(100);
+            param.etap1DemandeTransport.fadeIn(100);
+        });
+        param.btnvalideannonce.click(function () {
+            window.print();
+        });
+    }
+});
 
 /***/ })
 /******/ ]);

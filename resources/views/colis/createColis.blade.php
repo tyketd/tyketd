@@ -5,7 +5,7 @@
 
 @section('content')
     <div id="DemandeColis"  data-page="DemandeColis">
-        <div  class="container pt-3 ">
+        <div  class="container pt-3 noprint  ">
             <div class="d-flex flex-column p-2 w-75  m-0 m-sm-0 m-md-auto m-lg-auto">
                 <h1 class="d-flex flex-row justify-content-center m-3"><span class="d-flex">Votre envoie</span></h1>
                 <div class="d-flex flex-row"><span class="d-flex text-bold">Que voulez-vous envoyer ?</span></div>
@@ -111,7 +111,9 @@
                             </div>
                             <input type="date" placeholder="(Optionel)" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                         </div>
-
+                        <a  class="mt-2" href="#"  data-toggle="modal" data-target="#FormRetraitColisModalLabel">
+                            <i class="fa fa-address-card mt-1 mr-2"></i>Qui retirera votre colis
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex">
@@ -138,12 +140,14 @@
                     <span class="d-flex mt-3 text-bold">Description détaillé</span>
                     <textarea name="descrition" class="w-100" id="" cols="30" rows="3" placeholder="Merci de mattre plus de details sur votre demande notamment sur votre disponibilité"></textarea>
                     <div class="d-flex flex-column  mb-2 mt-2">
-                        <input type="button" class="btn-primary btn w-100 bg-yellow" value="Poster ma demande d'espédition">
+                        <input type="button" class="btn-primary btn w-100 bg-yellow" id="btnPosteDemande" value="Poster ma demande d'espédition">
                     </div>
                 </div>
             </div>
 
         </div>
+        @include('colis.inc._FormulaireRetraitColis')
+        @include('colis.inc._TemplatePdfColis')
     </div>
 
 @endsection

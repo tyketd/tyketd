@@ -1,4 +1,4 @@
-<footer class="pt-5 footer">
+<footer class="pt-5 footer noprint">
     <div class="container pb-2">
         <div class="row f-part1">
             <div class="col-md-6 col-lg-3 col-sm-12 flex-column justify-content-center">

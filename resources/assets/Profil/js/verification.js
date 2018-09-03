@@ -37,69 +37,69 @@ $(function () {
     if(MyVerificationClass.Id.data("page")==="verificationProfil"){
 
         MyVerificationClass.params.btnopenstep1.click(function(e){
-            MyVerificationClass.params.step1.fadeIn();
-            MyVerificationClass.params.step0.fadeOut();
+            MyVerificationClass.params.step1.fadeIn(100);
+            MyVerificationClass.params.step0.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 2
         MyVerificationClass.params.btnopenstep2.click(function(e){
-            MyVerificationClass.params.step2.fadeIn();
-            MyVerificationClass.params.step1.fadeOut();
+            MyVerificationClass.params.step2.fadeIn(100);
+            MyVerificationClass.params.step1.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp1.click(function(e){
-            MyVerificationClass.params.step0.fadeIn();
-            MyVerificationClass.params.step2.fadeOut();
+            MyVerificationClass.params.step0.fadeIn(100);
+            MyVerificationClass.params.step2.fadeOut(100);
             e.preventDefault();
         });
 
 
         //STEP 3
         MyVerificationClass.params.btnopenstep3.click(function(e){
-            MyVerificationClass.params.step3.fadeIn();
-            MyVerificationClass.params.step2.fadeOut();
+            MyVerificationClass.params.step3.fadeIn(100);
+            MyVerificationClass.params.step2.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp2.click(function(e){
-            MyVerificationClass.params.step2.fadeIn();
-            MyVerificationClass.params.step3.fadeOut();
+            MyVerificationClass.params.step2.fadeIn(100);
+            MyVerificationClass.params.step3.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 4
         MyVerificationClass.params.btnopenstep4.click(function(e){
-            MyVerificationClass.params.step4.fadeIn();
-            MyVerificationClass.params.step3.fadeOut();
+            MyVerificationClass.params.step4.fadeIn(100);
+            MyVerificationClass.params.step3.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp3.click(function(e){
-            MyVerificationClass.params.step3.fadeIn();
-            MyVerificationClass.params.step4.fadeOut();
+            MyVerificationClass.params.step3.fadeIn(100);
+            MyVerificationClass.params.step4.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 5
         MyVerificationClass.params.btnopenstep5.click(function(e){
-            MyVerificationClass.params.step5.fadeIn();
-            MyVerificationClass.params.step4.fadeOut();
+            MyVerificationClass.params.step5.fadeIn(100);
+            MyVerificationClass.params.step4.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp4.click(function(e){
-            MyVerificationClass.params.step4.fadeIn();
-            MyVerificationClass.params.step5.fadeOut();
+            MyVerificationClass.params.step4.fadeIn(100);
+            MyVerificationClass.params.step5.fadeOut(100);
             e.preventDefault();
         });
 
         //STEP 6
         MyVerificationClass.params.btnopenstep6.click(function(e){
-            MyVerificationClass.params.step6.fadeIn();
-            MyVerificationClass.params.step5.fadeOut();
+            MyVerificationClass.params.step6.fadeIn(100);
+            MyVerificationClass.params.step5.fadeOut(100);
             e.preventDefault();
         });
         MyVerificationClass.params.btnbacksetp5.click(function(e){
-            MyVerificationClass.params.step5.fadeIn();
-            MyVerificationClass.params.step6.fadeOut();
+            MyVerificationClass.params.step5.fadeIn(100);
+            MyVerificationClass.params.step6.fadeOut(100);
             e.preventDefault();
         });
 

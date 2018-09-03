@@ -21057,6 +21057,39 @@ table.text-center th {
   }
 }
 
+@media print {
+  #pdfColis {
+    display: block !important;
+  }
+
+  #pdfColis .blocklogo1 {
+    background-color: #f5f8fa;
+  }
+
+  #pdfColis .blocklogo1 img {
+    height: 100px;
+  }
+
+  #pdfColis .blocklogo2 {
+    color: #fff;
+    background: #054752;
+    font-size: 24px;
+  }
+
+  #pdfColis .blockqr img {
+    height: 200px;
+    width: auto;
+  }
+
+  .noprint {
+    display: none !important;
+  }
+}
+
+#DemandeTransport {
+  background-color: #fff;
+}
+
 #alerte {
   font-size: 14px;
   color: #054752;
@@ -21394,6 +21427,121 @@ table.text-center th {
   border-radius: 50%;
 }
 
+#HowIsWorks .main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#HowIsWorks .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#HowIsWorks .no-border td {
+  border-width: 0px;
+}
+
+#HowIsWorks tr:first-child td {
+  padding: 0px;
+}
+
+#HowIsWorks .table-nav .nav-link:first-child {
+  border-radius: 5px 5px 0px 0rem;
+  text-align: left;
+}
+
+#HowIsWorks .table-nav .nav-link:last-child {
+  text-align: left;
+  border-radius: 5px 5px 0px 0rem;
+}
+
+#HowIsWorks .group-list {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 0px;
+}
+
+#HowIsWorks .box-light {
+  border: 2px solid #fdf5c4;
+  background-color: #fffbec;
+  padding-left: 0px;
+  margin: 15px 0px;
+  text-align: justify;
+}
+
+#HowIsWorks .box-light img {
+  padding-top: 10px;
+}
+
+#HowIsWorks .white-box {
+  padding-left: 0px;
+  margin: 15px 0px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 577px) {
+  #HowIsWorks .list-group-item {
+    text-align: center;
+  }
+}
+
+#UserInformation .profile-header-img {
+  text-align: center;
+}
+
+#UserInformation .profile-header-img > .img-circle {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #51D2B7;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#UserInformation .custom-badge {
+  margin-top: -30px;
+  margin-right: -80px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#UserInformation .fa-form,
+#UserInformation .fa-form-last-line {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#UserInformation .fa-form {
+  margin-right: 10px;
+  color: green;
+}
+
+#UserInformation .fa-form-last-line {
+  margin-left: 26px;
+}
+
+#UserInformation .title-tiked {
+  position: fixed;
+  margin-left: 40px;
+}
+
+#UserInformation .master {
+  margin-top: 60px;
+}
+
+@media only screen and (min-width: 900px) {
+  #UserInformation .master {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #UserInformation .title-tiked {
+    position: absolute;
+    margin-left: 40px;
+  }
+}
+
 #PublierAnnonce {
   background-color: #fff;
   font-size: 14px;
@@ -21460,6 +21608,74 @@ table.text-center th {
   right: 8px;
   top: 5px;
 }
+
+#PublierAnnonce {
+  background-color: #fff;
+  font-size: 14px;
+  color: #054752;
+}
+
+#PublierAnnonce a {
+  text-decoration: none;
+  color: #00aff5;
+  font-size: 14px;
+}
+
+#PublierAnnonce .stepper .stepItem {
+  position: relative;
+}
+
+#PublierAnnonce .stepper .stepItem .divider {
+  width: 100px;
+  height: 1px;
+  background-color: #00aff5;
+}
+
+#PublierAnnonce .stepper .stepItem .number {
+  margin-top: -7px;
+  padding-left: 4px;
+}
+
+#PublierAnnonce .stepper .stepItem .textd {
+  font-size: 12px;
+  position: absolute;
+  right: -37px;
+  top: -8px;
+}
+
+#PublierAnnonce .activestep {
+  background-color: #00aff5;
+  color: #fff;
+}
+
+#PublierAnnonce .number {
+  border: 1px solid #00aff5;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  line-height: 14px;
+  padding-left: 3px;
+  font-size: 12px;
+}
+
+#PublierAnnonce .desc {
+  font-size: 12px;
+}
+
+#PublierAnnonce .numberchance {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  font-size: 36px;
+}
+
+#PublierAnnonce .close {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
 #TrajetDetail {
   background-color: #fff;
   font-size: 14px;
@@ -21547,5 +21763,46 @@ table.text-center th {
   #TrajetDetail .w-50 {
     width: 100% !important;
   }
+}
+
+#chatTrajet .chatelt {
+  background-color: #054752;
+  position: relative;
+}
+
+#chatTrajet .chatelt .fa {
+  position: absolute;
+  top: 2px;
+  font-size: 40px;
+  right: -12px;
+  color: #054752;
+}
+
+#chatTrajet img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+#chatTrajet .blockwriemsg {
+  background-color: white;
+  position: relative;
+}
+
+#chatTrajet .blockwriemsg .inputdiv {
+  height: 80px;
+}
+
+#chatTrajet .blockwriemsg .fa {
+  position: absolute;
+  top: 2px;
+  font-size: 40px;
+  right: -16px;
+  color: #eee;
+}
+
+#miseEnAcheinement {
+  background-color: #fff;
+  height: 320px;
 }
 

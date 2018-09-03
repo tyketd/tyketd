@@ -9,6 +9,8 @@ $(function () {
             // on recupere le bouton pour capturer laction
             this.Btn ={
                 btnclose : $("#DemandeColis #btnestimateprise"),
+                pdfColis : $("#DemandeColis #pdfColis"),
+                btnPosteDemande : $("#DemandeColis #btnPosteDemande"),
                 blockEstimaPrix : $("#DemandeColis .estimateprix")
             }
         }
@@ -21,6 +23,9 @@ $(function () {
         // fonction sexcerçant su le click de la fleche et permet de reduire le block DemandeColis
         MyDemandeColisClass.Btn.btnclose.click(function(){
             MyDemandeColisClass.Btn.blockEstimaPrix.fadeIn();
+        });
+        MyDemandeColisClass.Btn.btnPosteDemande.click(function(){
+            window.print();
         })
     }
 });

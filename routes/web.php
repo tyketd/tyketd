@@ -34,6 +34,7 @@ Route::get('/locale/{locale}', 'Welcome\WelcomeController@locale')->name('locale
 //route for create colis
 Route::prefix('colis')->group(function () {
     Route::get('/create','Colis\ColisController@create')->name("createcolis");
+    Route::get('/demandeTransport','Colis\ColisController@demandeTransport')->name("demandeTransport");
     Route::get('/search','Colis\ColisController@search')->name("searchcolis");
 });
 
@@ -60,6 +61,12 @@ Route::prefix('annonce')->group(function () {
 //TRAJET
 Route::prefix('trajet')->group(function () {
     Route::get('/detail/{id}','Trajet\TrajetController@detail')->name("detailTrajet");
+});
+
+
+//Acheminement
+Route::prefix('acheminement')->group(function () {
+    Route::get('/','Acheminement\AcheminementController@index')->name("miseEnAcheminement");
 });
 
 //Route::resource('reservation', 'ReservationController');

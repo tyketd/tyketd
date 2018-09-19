@@ -95,7 +95,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(33);
+module.exports = __webpack_require__(34);
 
 
 /***/ }),
@@ -120,7 +120,7 @@ require("./master");
 */
 __webpack_require__(3);
 
-window.Vue = __webpack_require__(25);
+window.Vue = __webpack_require__(26);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -128,7 +128,7 @@ window.Vue = __webpack_require__(25);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(29));
+Vue.component('example-component', __webpack_require__(30));
 
 //const app = new Vue({
 //    el: '#app'
@@ -143,10 +143,10 @@ __webpack_require__(6);
 __webpack_require__(9);
 __webpack_require__(11);
 __webpack_require__(14);
-__webpack_require__(16);
-__webpack_require__(18);
-__webpack_require__(21);
-__webpack_require__(23);
+__webpack_require__(17);
+__webpack_require__(19);
+__webpack_require__(22);
+__webpack_require__(24);
 
 /***/ }),
 /* 4 */
@@ -371,7 +371,7 @@ $(function () {
  * Created by mkwen on 12/08/2018.
  */
 __webpack_require__(15);
-__webpack_require__(37);
+__webpack_require__(16);
 
 /***/ }),
 /* 15 */
@@ -413,16 +413,61 @@ $(function () {
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Created by mkwen on 12/08/2018.
+ */
+
+$(function () {
+    var DemandeTransportClass = function DemandeTransportClass() {
+        _classCallCheck(this, DemandeTransportClass);
+
+        this.Id = $("#DemandeTransport");
+        // on recupere le bouton pour capturer laction
+        this.param = {
+            Etape2DemandeTransport: $("#DemandeTransport #Etape2DemandeTransport"),
+            etap1DemandeTransport: $("#DemandeTransport #etap1DemandeTransport"),
+            btnnextSpet: $("#DemandeTransport #btnnextSpet"),
+            btnprevSpet: $("#DemandeTransport #btnprevSpet"),
+            btnvalideannonce: $("#DemandeTransport #btnvalideannonce")
+        };
+    };
+
+    var MyDemandeTransportClass = new DemandeTransportClass();
+
+    if (MyDemandeTransportClass.Id.data("page") === "DemandeTransport") {
+
+        // fonction sexcer�ant su le click de la fleche et permet de reduire le block DemandeTransport
+        var param = MyDemandeTransportClass.param;
+        param.btnnextSpet.click(function () {
+            param.Etape2DemandeTransport.fadeIn();
+            param.etap1DemandeTransport.fadeOut();
+        });
+        param.btnprevSpet.click(function () {
+            param.Etape2DemandeTransport.fadeOut(100);
+            param.etap1DemandeTransport.fadeIn(100);
+        });
+        param.btnvalideannonce.click(function () {
+            window.print();
+        });
+    }
+});
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Created by mkwen on 16/08/2018.
  */
 
-__webpack_require__(17);
+__webpack_require__(18);
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -533,14 +578,14 @@ $(function () {
 });
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(19);
 __webpack_require__(20);
+__webpack_require__(21);
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -589,22 +634,22 @@ $(function () {
 });
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Created by mkwen on 20/08/2018.
  */
-__webpack_require__(22);
+__webpack_require__(23);
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -682,16 +727,16 @@ $(function () {
 });
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Created by mkwen on 23/08/2018.
  */
-__webpack_require__(24);
+__webpack_require__(25);
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -744,7 +789,7 @@ $(function () {
 });
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11707,10 +11752,10 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(26).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(27).setImmediate))
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -11766,7 +11811,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(27);
+__webpack_require__(28);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -11780,7 +11825,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -11970,10 +12015,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(28)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(29)))
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -12163,15 +12208,15 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(30)
+var normalizeComponent = __webpack_require__(31)
 /* script */
-var __vue_script__ = __webpack_require__(31)
+var __vue_script__ = __webpack_require__(32)
 /* template */
-var __vue_template__ = __webpack_require__(32)
+var __vue_template__ = __webpack_require__(33)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -12210,7 +12255,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -12319,7 +12364,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12348,7 +12393,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12391,58 +12436,10 @@ if (false) {
 }
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
- * Created by mkwen on 12/08/2018.
- */
-
-$(function () {
-    var DemandeTransportClass = function DemandeTransportClass() {
-        _classCallCheck(this, DemandeTransportClass);
-
-        this.Id = $("#DemandeTransport");
-        // on recupere le bouton pour capturer laction
-        this.param = {
-            Etape2DemandeTransport: $("#DemandeTransport #Etape2DemandeTransport"),
-            etap1DemandeTransport: $("#DemandeTransport #etap1DemandeTransport"),
-            btnnextSpet: $("#DemandeTransport #btnnextSpet"),
-            btnprevSpet: $("#DemandeTransport #btnprevSpet"),
-            btnvalideannonce: $("#DemandeTransport #btnvalideannonce")
-        };
-    };
-
-    var MyDemandeTransportClass = new DemandeTransportClass();
-
-    if (MyDemandeTransportClass.Id.data("page") === "DemandeTransport") {
-
-        // fonction sexcer�ant su le click de la fleche et permet de reduire le block DemandeTransport
-        var param = MyDemandeTransportClass.param;
-        param.btnnextSpet.click(function () {
-            param.Etape2DemandeTransport.fadeIn();
-            param.etap1DemandeTransport.fadeOut();
-        });
-        param.btnprevSpet.click(function () {
-            param.Etape2DemandeTransport.fadeOut(100);
-            param.etap1DemandeTransport.fadeIn(100);
-        });
-        param.btnvalideannonce.click(function () {
-            window.print();
-        });
-    }
-});
 
 /***/ })
 /******/ ]);
